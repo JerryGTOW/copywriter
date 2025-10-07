@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GTO Wizard Copywriter</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #0a0a0a;
+            color: #fff;
+        }
+        h1 {
+            color: #00d4ff;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #00d4ff;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background: #1a1a1a;
+            color: #fff;
+            font-size: 14px;
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        button {
+            background: linear-gradient(135deg, #00d4ff, #0066ff);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+        }
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+            color: #00d4ff;
+        }
+        .results {
+            display: none;
+            margin-top: 40px;
+            padding: 30px;
+            background: #1a1a1a;
+            border-radius: 12px;
+            border: 1px solid #333;
+        }
+        .variation {
+            margin: 20px 0;
+            padding: 20px;
+            background: #0a0a0a;
+            border-left: 4px solid #00d4ff;
+            border-radius: 8px;
+        }
+        .score {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #00d4ff;
+            color: #0a0a0a;
+            border-radius: 20px;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+        .copy-btn {
+            padding: 8px 16px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔥 GTO Wizard AI Copywriter</h1>
+    
+    <form id="briefForm">
+        <div class="form-group">
+            <label for="contentType">Content Type *</label>
+            <select id="contentType" name="content_type" required>
+                <option value="">Select content type...</option>
+                <option value="discord_announcement">Discord Announcement</option>
+                <option value="twitter_post">Twitter/X Post</option>
+                <option value="instagram_post">Instagram Post</option>
+                <option value="blog_article">Blog Article</option>
+                <option value="newsletter">Newsletter</option>
+                <option value="ppc_ad">PPC Ad Copy</option>
+                <option value="video_script">Video Script/Title</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="brief">Brief / Main Message *</label>
+            <textarea id="brief" name="brief" required placeholder="e.g., We're launching 3-way postflop solving with advanced nodelocking"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="keyPoints">Key Points (one per line)</label>
+            <textarea id="keyPoints" name="key_points" placeholder="- Instant 3-way postflop solving&#10;- Works with custom ranges and mixed stacks&#10;- Includes nodelocking 2.0"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="audience">Target Audience</label>
+            <input type="text" id="audience" name="target_audience" placeholder="e.g., Tournament players, All users, Cash game grinders">
+        </div>
+
+        <div class="form-group">
+            <label for="tone">Tone Preference (optional)</label>
+            <input type="text" id="tone" name="tone_preference" placeholder="e.g., More technical, More casual, More urgent">
+        </div>
+
+        <div class="form-group">
+            <label for="requirements">Special Requirements</label>
+            <textarea id="requirements" name="special_requirements" placeholder="e.g., Must include link to blog.gtowizard.com, Mention promo code WIZARDS25"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="context">Additional Context</label>
+            <textarea id="context" name="context" placeholder="Any background information that would help..."></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn">Generate Copy 🚀</button>
+    </form>
+
+    <div class="loading" id="loading">
+        <p>🧠 AI models are crafting your copy...</p>
+        <p>This takes 10-15 seconds...</p>
+    </div>
+
+    <div class="results" id="results"></div>
+
+    <script>
+        const WEBHOOK_URL = 'YOUR_N8N_WEBHOOK_URL_HERE'; // Update this!
+
+        document.getElementById('briefForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const loading = document.getElementById('loading');
+            const results = document.getElementById('results');
+            
+            // Disable form
+            submitBtn.disabled = true;
+            loading.style.display = 'block';
+            results.style.display = 'none';
+            
+            // Collect form data
+            const formData = new FormData(e.target);
+            const data = {};
+            for (let [key, value] of formData.entries()) {
+                if (key === 'key_points') {
+                    data[key] = value.split('\n').filter(p => p.trim());
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            try {
+                // Call n8n webhook
+                const response = await fetch(WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                // Display results
+                displayResults(result);
+                
+            } catch (error) {
+                alert('Error generating copy: ' + error.message);
+            } finally {
+                submitBtn.disabled = false;
+                loading.style.display = 'none';
+            }
+        });
+
+        function displayResults(data) {
+            const resultsDiv = document.getElementById('results');
+            
+            let html = '<h2>🏆 Your AI-Generated Copy</h2>';
+            
+            // Top 3 variations
+            data.topThree.forEach((variation, index) => {
+                const medal = ['🥇', '🥈', '🥉'][index];
+                html += `
+                    <div class="variation">
+                        <h3>${medal} ${variation.model} - Version ${variation.version} 
+                            <span class="score">${variation.score}/100</span>
+                        </h3>
+                        <pre style="white-space: pre-wrap; font-family: inherit;">${variation.content}</pre>
+                        <button class="copy-btn" onclick="copyToClipboard('${index}')">📋 Copy to Clipboard</button>
+                        <textarea id="content-${index}" style="display:none;">${variation.content}</textarea>
+                    </div>
+                `;
+            });
+            
+            resultsDiv.innerHTML = html;
+            resultsDiv.style.display = 'block';
+            resultsDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function copyToClipboard(index) {
+            const textarea = document.getElementById(`content-${index}`);
+            textarea.style.display = 'block';
+            textarea.select();
+            document.execCommand('copy');
+            textarea.style.display = 'none';
+            alert('✅ Copied to clipboard!');
+        }
+    </script>
+</body>
+</html>
