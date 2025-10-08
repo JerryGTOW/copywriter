@@ -1,147 +1,143 @@
 {
   "discord_announcement": {
-    "structure": [
-      "Opening: @everyone Wizards, [exciting statement]! 🔥",
-      "Main Hook: Brief description + custom emoji",
-      "Read More Link: 🗒️ READ MORE: [link]",
-      "Features Section: 2-4 sections with icons and bullets",
-      "Closing: Motivational statement + :wizsalute~1:"
-    ],
-    "best_practices": [
-      "Always tag @everyone at start",
-      "Use custom Discord emojis",
-      "Include 2-5 major features per announcement",
-      "Mix technical specs with user benefits",
-      "End with excitement/motivation",
-      "Length: 150-350 words"
-    ],
-    "avoid": [
-      "Don't bury the lead",
-      "Don't use generic emojis when custom ones exist"
-    ],
-    "formulas": {
-      "big_update": "Wizards, [our biggest/most powerful/legendary] update [ever/is here]!",
-      "new_feature": "Wizards, we've just [dropped/launched/introduced] [feature]!",
-      "evolution": "Wizards, today we [enter a new era/introduce the next evolution]!"
+    "character_limit": 2000,
+    "structure": {
+      "line_1": "@everyone Wizards, [hook]! <:wizpog:964623753025814588>",
+      "line_2": "🗒️ READ MORE: [blog_url]",
+      "line_3": "[blank line]",
+      "sections": "2-4 ## headers with bullets and descriptions"
     },
-    "character_limit": null,
-    "word_count_range": [150, 350]
+    "formatting_rules": [
+      "ALWAYS start with @everyone Wizards",
+      "Line 2 MUST be 🗒️ READ MORE",
+      "Use ## for section headers (NOT bold, NOT ###)",
+      "Use - (dash) for bullets, NEVER * (asterisk)",
+      "Bold important terms with **text**",
+      "Max 2000 characters total",
+      "Blank line after READ MORE before first section"
+    ],
+    "emojis": {
+      "custom_discord": [
+        "<:wizpog:964623753025814588>",
+        "<:wizsalute:964623724873658488>",
+        "<:wizlearn:964623697992355912>"
+      ],
+      "standard": {
+        "analysis_reports": ["📊", "🔍", "📈"],
+        "performance": ["🚀", "⚡"],
+        "competitive": ["⚔️", "🎮"],
+        "money": ["💰", "💵"],
+        "tournaments": ["🏆", "🥇"],
+        "learning": ["📚", "📖", "🧠"],
+        "technical": ["🔐", "🛠️", "🎯"]
+      }
+    },
+    "real_examples": [
+      {
+        "type": "feature_update",
+        "title": "Multiple Features Update (September 2024)",
+        "content": "@everyone Wizards, todays update makes Study → Practice → Analyze sharper than ever! <:wizpog:964623753025814588>\n\n🗒️ READ MORE: https://blog.gtowizard.com/redesigned_analyzer_and_upgraded_gto_reports/\n\n## 📊 Analyzer – Redesigned Hands Table\n\nThe central hub for reviewing your uploaded hands is now faster and more intuitive.\n\n- Smart filters and natural language search\n- One-click actions to jump from leak to solver\n- Bulk notes, custom reports, cleaner layout\n\n## 🔎 GTO Reports – Preflop Mistakes + Flop View\n\nYour reports now highlight the exact hands costing you the most EV.\n\n- Mistakes panel shows biggest preflop errors by bb lost\n- New General Flop View benchmarks your frequencies vs GTO\n\n## ⚔️ PokerArena – Season 3\n\n- One-click hand marking + improved post-game insights\n- New rewards: Elite subs and exclusive avatars"
+      },
+      {
+        "type": "major_launch",
+        "title": "Biggest Update Ever (August 2024)",
+        "content": "@everyone Wizards, our biggest update ever is here! <:wizpog:964623753025814588> 3-Way Postflop Solving, Nodelocking 2.0, and 50,000+ Final Table ICM Sims are live! 🚀\n\n🗒️ READ MORE: https://blog.gtowizard.com/now_live_3_way_solving_nodelocking_2_0_and_50k_icm_ft_sims\n\n## 🧠 3-way Postflop Solving\n\n- Instantly solve 3-way postflop spots with GTO Wizard AI\n- Supporting: Custom ranges, stack sizes, nodelocking, practice mode\n- Coming soon: ICM, bounties, dynamic sizing\n\n## 🖌️ Nodelocking 2.0\n\n- New Frequency locking algorithm - 3-6x more precise\n- Model opponents based on global frequencies\n- Lock multiple nodes, save as presets\n\n## 🏆 50,000+ Final Table ICM Sims\n\n- Over 53,000 ICM Final Table sims released today\n- Covers 3-max to 8-max, 10bb-70bb mixed stacks\n- Instantly available, closely matched sims\n\nP.S. $40,000+ RakeBack Wizard promo still running!"
+      }
+    ],
+    "what_to_avoid": [
+      "Don't put READ MORE anywhere except Line 2",
+      "Don't skip READ MORE link (mandatory)",
+      "Don't use * for bullets (use - only)",
+      "Don't use ### or #### (use ## only)",
+      "Don't forget @everyone Wizards at start",
+      "Don't forget <:wizpog:964623753025814588> after Line 1",
+      "Don't exceed 2000 characters",
+      "Don't use generic poker slang",
+      "Don't be vague without specifics",
+      "Don't forget blank line after READ MORE"
+    ]
   },
+  
   "twitter_post": {
-    "structure": [
-      "Hook/Statement",
-      "2-4 benefit bullets with checkmarks",
-      "CTA or engagement question",
-      "Link"
-    ],
-    "best_practices": [
-      "Lead with value or bold claim",
-      "Use checkmarks (✓) for feature lists",
-      "Keep under 280 chars or thread",
-      "Include engagement mechanisms",
-      "Use action verbs: crush, master, dominate"
-    ],
-    "avoid": [
-      "Don't be overly technical without context",
-      "Don't forget the CTA or link",
-      "Don't use more than 2-3 emojis per tweet"
-    ],
     "character_limit": 280,
-    "word_count_range": [15, 50]
+    "structure": {
+      "single": "[Hook]\n\n✅ Benefit 1\n✅ Benefit 2\n✅ Benefit 3\n\n[CTA] 👉 [link]",
+      "thread": "Tweet 1: Hook + announcement\nTweet 2-3: Feature bullets\nTweet 4: CTA + link"
+    },
+    "formatting_rules": [
+      "Lead with hook/question/bold statement",
+      "Use ✅ for benefits (not bullets)",
+      "Keep under 280 chars OR break into thread",
+      "Include link at end",
+      "2-3 hashtags MAX (if any)",
+      "Emojis sparingly: 🔥 👇 ✅ 🚀 🎯"
+    ],
+    "real_examples": [
+      {
+        "content": "He's conquered the WSOP Main. Now he's climbing the PokerArena ladder.\n\nThis is just the first of Espen's streams this month, tune in LIVE on Twitch 🎥",
+        "views": "372K",
+        "type": "engagement"
+      },
+      {
+        "content": "4 sizings. 2 sizings. 1 sizing. Potting every flop. Even a range bet.\n\nWhich loses the least EV?\nThe answer isn't what you think.",
+        "views": "271K",
+        "type": "educational_hook"
+      },
+      {
+        "content": "If your opponent doesn't study GTO, you have an edge.\nThis article shows how to turn that edge into pure profit.\n🔥 Get the exploits from Vanja 👇",
+        "views": "1.4M",
+        "type": "value_content"
+      }
+    ]
   },
+  
   "instagram_post": {
-    "structure": [
-      "Visual-First Headline (1 line, <10 words)",
-      "Explanation (1-3 sentences)",
-      "Optional Feature Bullets (2-4 items)",
-      "Soft CTA (1 line)"
+    "word_count": "80-150",
+    "structure": "[Visual headline - 1 line]\n\n[2-3 sentence explanation]\n\n[Optional bullets with emojis]\n\n[Soft CTA]\n\n.\n.\n.\n[8-15 hashtags]",
+    "formatting_rules": [
+      "Visual-first approach",
+      "Line breaks for readability",
+      "Emojis integrated naturally",
+      "Soft CTA",
+      "Hashtags on separate lines after dots"
     ],
-    "best_practices": [
-      "Think visual-first",
-      "Use line breaks for readability",
-      "Keep it punchy: 50-150 words total",
-      "Focus on user benefit over technical specs",
-      "Softer CTAs",
-      "Use relevant emojis"
-    ],
-    "avoid": [
-      "Don't write walls of text",
-      "Don't overload with hashtags",
-      "Don't be too sales-y"
-    ],
-    "character_limit": null,
-    "word_count_range": [50, 150]
+    "hashtags": [
+      "#GTOWizard",
+      "#PokerStrategy",
+      "#GTOPoker",
+      "#PokerTraining",
+      "#LearnPoker",
+      "#PokerLife",
+      "#PokerCommunity",
+      "#CardPlayer"
+    ]
   },
-  "blog_article": {
-    "structure": [
-      "Compelling Headline (6-12 words)",
-      "Introduction (2-3 paragraphs)",
-      "Body (Multiple H2/H3 sections)",
-      "Conclusion (Summary + CTA)"
-    ],
-    "best_practices": [
-      "Write 800-2000 words for feature announcements",
-      "Use descriptive subheadings",
-      "Include screenshots/visuals",
-      "Explain technical concepts with analogies",
-      "Add specific numbers and benchmarks",
-      "Link to related content"
-    ],
-    "avoid": [
-      "Don't assume expert knowledge",
-      "Don't write feature lists without context",
-      "Don't bury important info"
-    ],
-    "character_limit": null,
-    "word_count_range": [800, 2000]
-  },
-  "newsletter": {
-    "structure": [
-      "Subject Line (40-50 chars)",
-      "Greeting",
-      "Main Story (100-150 words)",
-      "Secondary Updates",
-      "Community Spotlight",
-      "Closing CTA"
-    ],
-    "best_practices": [
-      "Most important news first",
-      "Scannable format with clear sections",
-      "Mix product and community content",
-      "Personal but professional tone",
-      "One primary CTA",
-      "Mobile-friendly formatting"
-    ],
-    "avoid": [
-      "Don't cram too many CTAs",
-      "Don't write novels",
-      "Don't neglect subject line"
-    ],
-    "character_limit": null,
-    "word_count_range": [400, 800]
-  },
+  
   "ppc_ad": {
-    "structure": [
-      "Headline 1 (30 chars): Main Benefit/Solution",
-      "Headline 2 (30 chars): Unique Feature/Proof",
-      "Description 1 (90 chars): Problem + Solution",
-      "Description 2 (90 chars): Features + CTA"
-    ],
-    "best_practices": [
-      "Focus on outcomes, not features",
-      "Use numbers and specifics",
-      "Match ad copy to landing page",
-      "Test multiple variations",
-      "Include urgency when appropriate"
-    ],
-    "avoid": [
-      "Don't exaggerate",
-      "Don't use jargon without context",
-      "Don't neglect mobile preview"
-    ],
-    "character_limits": {
-      "headline": 30,
-      "description": 90
-    }
+    "components": {
+      "headline1": {
+        "char_limit": 30,
+        "purpose": "Main benefit - grab attention"
+      },
+      "headline2": {
+        "char_limit": 30,
+        "purpose": "Unique feature or differentiator"
+      },
+      "description1": {
+        "char_limit": 90,
+        "purpose": "Problem + solution"
+      },
+      "description2": {
+        "char_limit": 90,
+        "purpose": "Features + CTA"
+      }
+    },
+    "rules": [
+      "COUNT CHARACTERS EXACTLY",
+      "Use numbers (50,000+, 3-way, etc.)",
+      "Lead with benefit, not feature",
+      "Include CTA in Description 2",
+      "Mention GTO Wizard AI or unique tech"
+    ]
   }
 }
