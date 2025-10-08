@@ -1,0 +1,252 @@
+{
+  "brand_identity": {
+    "name": "GTO Wizard",
+    "tagline": "The ultimate all-in-one poker GTO study tool",
+    "core_positioning": "Educational authority meets cutting-edge poker tech",
+    "target_audience": "Serious poker players, grinders, pros, students of the game"
+  },
+  
+  "tone_of_voice": {
+    "primary_attributes": [
+      "Technical yet accessible",
+      "Confident and authoritative",
+      "Aspirational and motivational",
+      "Feature-forward with clear benefits",
+      "Community-driven (Wizards = users)"
+    ],
+    "writing_style": {
+      "sentence_structure": "Mix of short punchy statements and detailed explanations",
+      "vocabulary": "Poker terminology + tech language, assumes intermediate knowledge",
+      "punctuation": "Liberal use of emojis in social/discord, bullets for features",
+      "rhythm": "Fast-paced, energetic, action-oriented"
+    },
+    "avoid": [
+      "Overly salesy language",
+      "Passive voice",
+      "Jargon without explanation",
+      "Boring feature lists without benefits"
+    ]
+  },
+  
+  "messaging_frameworks": {
+    "feature_announcement": {
+      "structure": "Hook → What's new → Why it matters → Technical details → CTA",
+      "example": "Wizards, we've just dropped a legendary update! 🔥 [Feature] is here → [Benefit] → [Technical specs] → Try it now!"
+    },
+    "educational_content": {
+      "structure": "Problem/Question → Solution/Answer → How to use → Benefit",
+      "example": "Everyone misplays multiway pots → That's why we built 3-way solving → [How it works] → Master spots no one studies"
+    },
+    "product_value": {
+      "structure": "Pain point → Our solution → Unique advantage → Proof/Results",
+      "example": "Managing tables shouldn't feel like a boss fight → Table Wizard helps you stay in control → Custom layouts + smart overlays → Play 20 tables, never miss a spot"
+    }
+  },
+  
+  "content_type_templates": {
+    "discord_announcement": {
+      "format": "@everyone Wizards, [exciting opener]! 🔥 [Main announcement] :wizpog~1:\n\n🗒️ READ MORE: [link]\n\n[Icon] [Feature 1 Title]\n[Benefit bullets]\n\n[Icon] [Feature 2 Title]\n[Benefit bullets]\n\n[Closing enthusiasm] :wizsalute~1:",
+      "characteristics": [
+        "Always starts with @everyone Wizards",
+        "Enthusiastic opener with emoji",
+        "Structured with icons/emojis for sections",
+        "Multiple features per announcement",
+        "Ends with motivational closer + custom emoji",
+        "Length: 150-300 words"
+      ],
+      "examples": [
+        "Wizards, we've just dropped a legendary update!",
+        "Wizards, today we are introducing the next evolution",
+        "Wizards, our biggest update ever is here!"
+      ]
+    },
+    
+    "twitter_post": {
+      "format": "[Hook/Statement]\n\n[2-4 benefit bullets with checkmarks]\n\n[CTA or engagement question]\n\n[Link]",
+      "characteristics": [
+        "Direct, benefit-oriented",
+        "Use checkmarks (✓) for feature lists",
+        "Keep under 280 chars or use thread format",
+        "Include engagement hooks (questions, challenges)",
+        "Motivational language: 'crush', 'master', 'dominate'"
+      ],
+      "examples": [
+        "The biggest edges are in spots no one studies.",
+        "This update makes your entire workflow tighter: Study → Practice → Analyze.",
+        "Find the bluff. Can you spot the fake?"
+      ]
+    },
+    
+    "instagram_post": {
+      "format": "[Visual-first headline]\n\n[1-2 sentence explanation]\n\n[Optional: Feature bullets]\n\n[Soft CTA]",
+      "characteristics": [
+        "Shorter than discord (50-150 words)",
+        "Visual-first thinking",
+        "Emphasis on user benefit over technical specs",
+        "Softer CTAs",
+        "Use of line breaks for readability"
+      ],
+      "examples": [
+        "Studying with GTO Wizard just got even better.",
+        "Automatically analyze every hand you play.",
+        "The biggest edges are in spots no one studies."
+      ]
+    },
+    
+    "blog_article": {
+      "format": "[Compelling headline]\n\n[Problem/Context intro]\n\n[Solution sections with H2/H3]\n\n[Technical details]\n\n[Use cases/Examples]\n\n[Conclusion + CTA]",
+      "characteristics": [
+        "Long-form (800-2000 words)",
+        "Technical depth with explanations",
+        "Multiple sections with clear headers",
+        "Mix of benefits and technical specs",
+        "Educational tone with authority",
+        "Include benchmarks, data, specifics"
+      ],
+      "examples": [
+        "Multiway spots have long been one of the most challenging areas in poker...",
+        "We're excited to announce a groundbreaking new approach for solving optimal poker strategies...",
+        "Managing multiple tables shouldn't feel like a boss fight..."
+      ]
+    },
+    
+    "newsletter": {
+      "format": "[Friendly greeting]\n\n[Main story/update]\n\n[Additional updates in brief]\n\n[Community highlight]\n\n[Closing + CTA]",
+      "characteristics": [
+        "Conversational but professional",
+        "Hierarchy: Most important first",
+        "Mix of product updates and community content",
+        "Personal touches",
+        "Clear section breaks"
+      ]
+    },
+    
+    "ppc_ad": {
+      "format": {
+        "headline": "[Benefit/Solution] | [Unique Value Prop]",
+        "description": "[Problem] [Solution in 1 sentence] [CTA]"
+      },
+      "characteristics": [
+        "Ultra-concise (headlines: 30 chars, descriptions: 90 chars)",
+        "Clear value proposition",
+        "Action-oriented CTAs",
+        "Focus on outcomes, not features",
+        "Test variations: benefit vs feature vs social proof"
+      ],
+      "examples": [
+        "Master GTO Poker | AI-Powered Solver",
+        "Learn from WSOP Final Tables | Real Hand Histories",
+        "Crush Your Opponents | Study Optimal Strategy"
+      ]
+    }
+  },
+  
+  "key_phrases_library": {
+    "openers": [
+      "Wizards, we've just dropped",
+      "Wizards, today we are introducing",
+      "Wizards, our biggest update ever is here",
+      "We're excited to announce",
+      "We're proud to introduce"
+    ],
+    "value_statements": [
+      "The biggest edges are in spots no one studies",
+      "Master spots your opponents don't understand",
+      "Achieve in seconds what used to take weeks",
+      "Crush the field",
+      "Study like a pro",
+      "Elevate your game",
+      "Never miss a big spot",
+      "Stay focused, sharp and in control"
+    ],
+    "technical_descriptors": [
+      "instantly solve",
+      "high precision",
+      "exact chip stacks",
+      "synced video replays",
+      "seamless postflop solving",
+      "25% greater accuracy",
+      "faster solving times",
+      "minimally exploitable strategies"
+    ],
+    "community_language": [
+      "Fellow Wizards",
+      "Wizards",
+      "Become an endboss",
+      "Who will be the best Wizard?",
+      "Enter the Arena",
+      "Climb the leaderboard"
+    ],
+    "ctas": [
+      "Try it yourself",
+      "Try it now",
+      "Jump into [Feature]",
+      "Play Now",
+      "Start crushing",
+      "Unlock [benefit]",
+      "Get started",
+      "Read more",
+      "Learn more"
+    ]
+  },
+  
+  "emoji_usage": {
+    "discord": {
+      "excitement": "🔥",
+      "learn": ":wizlearn~1:",
+      "celebrate": ":wizpog~1:",
+      "respect": ":wizsalute~1:",
+      "announcement": "🗒️",
+      "trophy": "🏆",
+      "brain": "🧠",
+      "target": "🎯",
+      "battle": "⚔️"
+    },
+    "social": {
+      "excitement": "🔥",
+      "trophy": "🏆",
+      "cards": "♠️",
+      "checkmark": "✓",
+      "sparkle": "✨",
+      "rocket": "🚀"
+    }
+  },
+  
+  "product_features_vocabulary": {
+    "GTO_Wizard_AI": "AI-powered custom solving engine",
+    "QRE": "Quantal Response Equilibrium - evolution of Nash equilibrium",
+    "ICM": "Independent Chip Model tournament solving",
+    "Events": "Replay legendary WSOP/SCOOP final tables with synced video",
+    "Analyzer": "Hand history upload and analysis tool",
+    "Practice_Mode": "Interactive GTO training drills",
+    "PokerArena": "Heads-up ranked matchmaking (formerly PlayMode)",
+    "Table_Wizard": "Multi-table management tool with overlays and hotkeys",
+    "GTO_Reports": "Aggregate analysis comparing your play to GTO benchmarks",
+    "Nodelocking": "Opponent modeling and exploitation tool",
+    "Dynamic_Sizing": "Adaptive bet sizing algorithm",
+    "Aggregated_Reports": "Custom flop texture analysis across all boards"
+  },
+  
+  "competitor_differentiation": {
+    "vs_solvers": "Instant solving vs hours/days of compute time",
+    "vs_training_sites": "Real tournament scenarios with exact ICM",
+    "vs_trackers": "GTO benchmarking not just stats",
+    "unique_advantages": [
+      "QRE (only solver with this)",
+      "Synced video replays of real final tables",
+      "3-way postflop solving",
+      "AI-powered instant custom solving",
+      "All-in-one ecosystem (study + practice + analyze + play)"
+    ]
+  },
+  
+  "brand_voice_examples": {
+    "too_corporate": "❌ We are pleased to inform you that our platform has received an enhancement.",
+    "too_casual": "❌ yo check out this sick new feature lmao gonna wreck everyone",
+    "just_right": "✅ Wizards, we've just dropped a legendary update! 🔥 3-way solving is here, and it's a game-changer.",
+    
+    "too_technical": "❌ Our QRE algorithm optimizes node selection across the game tree with minimized exploitability coefficients.",
+    "too_simple": "❌ We made the solver better. It's faster now.",
+    "just_right": "✅ QRE optimizes every node in the game tree, ensuring accurate solutions even in uncommon spots. The result? 25% greater accuracy and significantly better performance against real opponents."
+  }
+}
