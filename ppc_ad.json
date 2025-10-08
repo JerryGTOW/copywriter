@@ -1,0 +1,67 @@
+{
+  "content_type": "ppc_ad",
+  "platform": "Google Ads",
+  
+  "components": {
+    "headline1": {
+      "char_limit": 30,
+      "purpose": "Main benefit - grab attention immediately",
+      "guidelines": "Lead with the biggest value proposition"
+    },
+    "headline2": {
+      "char_limit": 30,
+      "purpose": "Unique feature or differentiator",
+      "guidelines": "What makes GTO Wizard different"
+    },
+    "description1": {
+      "char_limit": 90,
+      "purpose": "Problem + solution",
+      "guidelines": "Address user pain point and how we solve it"
+    },
+    "description2": {
+      "char_limit": 90,
+      "purpose": "Features + CTA",
+      "guidelines": "List key features and clear call to action"
+    }
+  },
+  
+  "formatting_rules": [
+    "COUNT CHARACTERS EXACTLY - strict limits",
+    "Use numbers for credibility (50,000+, 3-way, etc.)",
+    "Lead with benefit, NOT feature",
+    "Include CTA in Description 2",
+    "Mention GTO Wizard AI or unique technology",
+    "Use title case for headlines",
+    "Keep descriptions conversational but concise"
+  ],
+  
+  "best_practices": {
+    "keywords_to_include": ["GTO", "poker", "solver", "strategy", "training"],
+    "power_words": ["Ultimate", "Master", "Instant", "Advanced", "Proven"],
+    "numbers_work": "50,000+ scenarios, 3-way solving, etc.",
+    "urgency": "Try free, Start now, Get started today"
+  },
+  
+  "real_examples": [
+    {
+      "headline1": "Master GTO Poker Strategy",
+      "headline2": "AI-Powered Instant Solving",
+      "description1": "Learn optimal poker strategy with 50,000+ ICM scenarios and real WSOP final table replays.",
+      "description2": "Study, practice & analyze with the only solver featuring QRE technology. Start crushing today!"
+    },
+    {
+      "headline1": "Ultimate GTO Study Tool",
+      "headline2": "3-Way Postflop Solving",
+      "description1": "Dominate the tables with GTO Wizard AI. Solve complex spots in seconds, not weeks.",
+      "description2": "Instant solving, 50,000+ scenarios, WSOP replays. Try free today and elevate your game!"
+    }
+  ],
+  
+  "what_to_avoid": [
+    "Don't exceed character limits - ads will be rejected",
+    "Don't use all caps - looks spammy",
+    "Don't make unverifiable claims",
+    "Don't forget the CTA",
+    "Don't be generic - emphasize unique features"
+  ]
+}
