@@ -1,0 +1,60 @@
+{
+  "content_type": "twitter_post",
+  "character_limit": 280,
+  
+  "formats": {
+    "single_tweet": {
+      "structure": "[Hook statement]\n\n✅ Benefit 1\n✅ Benefit 2\n✅ Benefit 3\n\n[CTA] 👉 [link]",
+      "max_chars": 280,
+      "when_to_use": "Simple announcements, single features, quick updates"
+    },
+    "thread": {
+      "structure": "Tweet 1: Hook + main announcement\nTweet 2-3: Feature bullets with benefits\nTweet 4: CTA + link",
+      "tweet_count": "2-5 tweets",
+      "when_to_use": "Complex features, multiple announcements, detailed explanations"
+    }
+  },
+  
+  "formatting_rules": [
+    "Lead with hook, question, or bold statement",
+    "Use ✅ for benefit lists (not bullets)",
+    "Keep under 280 chars OR break into thread",
+    "Include link at end",
+    "Maximum 2-3 hashtags (if any)",
+    "Emojis sparingly and strategically"
+  ],
+  
+  "emojis": {
+    "recommended": ["🔥", "👇", "✅", "🚀", "🎯", "💪", "⚡", "🏆"],
+    "usage": "1-3 emojis per tweet maximum"
+  },
+  
+  "real_examples": [
+    {
+      "content": "He's conquered the WSOP Main. Now he's climbing the PokerArena ladder.\n\nThis is just the first of Espen's streams this month, tune in LIVE on Twitch 🎥",
+      "views": "372K",
+      "type": "engagement",
+      "format": "single"
+    },
+    {
+      "content": "4 sizings. 2 sizings. 1 sizing. Potting every flop. Even a range bet.\n\nWhich loses the least EV?\nThe answer isn't what you think.",
+      "views": "271K",
+      "type": "educational_hook",
+      "format": "single"
+    },
+    {
+      "content": "If your opponent doesn't study GTO, you have an edge.\nThis article shows how to turn that edge into pure profit.\n🔥 Get the exploits from Vanja 👇",
+      "views": "1.4M",
+      "type": "value_content",
+      "format": "single"
+    }
+  ],
+  
+  "what_to_avoid": [
+    "Don't exceed 280 characters for single tweets",
+    "Don't use more than 3 hashtags",
+    "Don't overuse emojis (max 3 per tweet)",
+    "Don't forget to include a link when relevant",
+    "Don't use generic poker clichés"
+  ]
+}
