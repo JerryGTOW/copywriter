@@ -1,4 +1,90 @@
 {
+  "company": "GTO Wizard",
+  "tagline": "The ultimate all-in-one poker GTO study tool",
+  "mission": "Educational authority meets cutting-edge poker tech",
+  "target_audience": "Serious poker players, cash game grinders, MTT specialists, poker students",
+  
+  "tone": {
+    "characteristics": [
+      "Technical yet accessible",
+      "Confident and authoritative",
+      "Aspirational and motivational",
+      "Feature-forward with clear benefits",
+      "Community-driven (users are 'Wizards')"
+    ]
+  },
+  
+  "vocabulary": {
+    "openers": [
+      "Wizards, we're excited to announce",
+      "Wizards, today we're introducing",
+      "Wizards, our biggest update",
+      "Wizards, todays update makes"
+    ],
+    "value_phrases": [
+      "crush the field",
+      "master optimal strategy",
+      "elevate your game",
+      "dominate the tables",
+      "sharper than ever",
+      "never miss a spot"
+    ],
+    "community_terms": [
+      "Fellow Wizards",
+      "Wizards",
+      "enter the Arena",
+      "climb the leaderboard"
+    ],
+    "ctas": [
+      "Try it now",
+      "Start crushing",
+      "Get started",
+      "Jump into",
+      "Dive in",
+      "Read more"
+    ]
+  },
+  
+  "product_features": [
+    "GTO Wizard AI (instant solving, QRE technology)",
+    "50,000+ ICM final table scenarios",
+    "3-way postflop solving with nodelocking",
+    "Real WSOP/SCOOP final table replays",
+    "Analyzer 2.0 with hand history upload",
+    "PokerArena (heads-up ranked mode)",
+    "Table Wizard (table management software)"
+  ],
+  
+  "target_segments": [
+    {
+      "name": "Cash Game Grinders",
+      "characteristics": ["NL200+", "serious students", "volume players"],
+      "language": ["crush", "maximize EV", "optimal strategy"]
+    },
+    {
+      "name": "MTT Specialists",
+      "characteristics": ["ICM focused", "final table preparation"],
+      "language": ["dominate final tables", "ICM perfection", "never miss a spot"]
+    },
+    {
+      "name": "Poker Students",
+      "characteristics": ["learning fundamentals", "improving quickly"],
+      "language": ["master basics", "accelerate learning", "study smarter"]
+    },
+    {
+      "name": "Professional Players",
+      "characteristics": ["cutting-edge strategy", "competitive edge"],
+      "language": ["next-level strategy", "exploit opponents", "stay ahead"]
+    },
+    {
+      "name": "Casual Serious Players",
+      "characteristics": ["home games", "occasional tournaments"],
+      "language": ["elevate your game", "practical tools", "easy to use"]
+    }
+  ]
+}
+
+{
   "brand_identity": {
     "name": "GTO Wizard",
     "tagline": "The ultimate all-in-one poker GTO study tool",
