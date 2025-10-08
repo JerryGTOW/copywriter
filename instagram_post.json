@@ -1,0 +1,59 @@
+{
+  "content_type": "instagram_post",
+  "word_count": "80-150 words",
+  
+  "structure": {
+    "headline": "1 line, under 10 words - visual and attention-grabbing",
+    "body": "2-3 sentences with line breaks for readability",
+    "bullets": "Optional 2-4 bullets with emojis",
+    "cta": "Soft CTA - not pushy",
+    "spacing": "Use . on separate lines before hashtags",
+    "hashtags": "8-15 hashtags on separate lines after spacing dots"
+  },
+  
+  "formatting_rules": [
+    "Visual-first approach - imagine the accompanying image",
+    "Use line breaks generously for readability",
+    "Integrate emojis naturally into text",
+    "Keep CTA soft and inviting, not aggressive",
+    "Hashtags on separate lines after dots (. . .)"
+  ],
+  
+  "tone": {
+    "style": "More casual and visual than Discord/Twitter",
+    "approach": "Inspirational and aspirational",
+    "emotion": "Excitement without being salesy"
+  },
+  
+  "hashtags": [
+    "#GTOWizard",
+    "#PokerStrategy",
+    "#GTOPoker",
+    "#PokerTraining",
+    "#LearnPoker",
+    "#PokerLife",
+    "#PokerCommunity",
+    "#CardPlayer",
+    "#PokerGrind",
+    "#PokerStudy"
+  ],
+  
+  "real_examples": [
+    {
+      "content": "Studying with GTO Wizard just got even better.\n\nSmarter reports. Cleaner analysis. Multiway practice.\n\n.\n.\n.\n#GTOWizard #PokerStrategy #GTOPoker #PokerTraining #LearnPoker #PokerLife",
+      "type": "feature_update"
+    },
+    {
+      "content": "The biggest edges are in spots no one studies.\n\nEveryone misplays multiway pots; that's why we built a 3-way solver with advanced nodelocking.\n\n.\n.\n.\n#GTOWizard #PokerStrategy #GTOPoker #PokerTraining",
+      "type": "value_proposition"
+    }
+  ],
+  
+  "what_to_avoid": [
+    "Don't exceed 150 words",
+    "Don't use more than 15 hashtags",
+    "Don't be too technical - keep it accessible",
+    "Don't forget line breaks - walls of text don't work on IG",
+    "Don't use aggressive CTAs"
+  ]
+}
