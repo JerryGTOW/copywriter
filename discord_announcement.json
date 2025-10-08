@@ -1,0 +1,76 @@
+{
+  "content_type": "discord_announcement",
+  "character_limit": 2000,
+  
+  "mandatory_structure": {
+    "line_1": "@everyone Wizards, [exciting hook]! <:wizpog:964623753025814588>",
+    "line_2": "🗒️ READ MORE: https://blog.gtowizard.com/[slug]",
+    "line_3": "[BLANK LINE]",
+    "line_4_plus": "## [Emoji] [Section Title]\n[Content with bullets]\n[BLANK LINE between sections]"
+  },
+  
+  "formatting_rules": [
+    "ALWAYS start with: @everyone Wizards, [statement]! <:wizpog:964623753025814588>",
+    "Line 2 MUST be: 🗒️ READ MORE: [blog URL]",
+    "Use ## for section headers (NOT bold, NOT ###)",
+    "Use - (dash) for bullets, NEVER * (asterisk)",
+    "Bold important terms with **text**",
+    "Maximum 2000 characters total",
+    "Blank line after READ MORE before first section",
+    "Blank line between each section"
+  ],
+  
+  "emojis": {
+    "custom": {
+      "excitement": "<:wizpog-1:964623753025814588>",
+      "closing": "<:wizsalute-1:964623724873658488>",
+      "learning": "<:wizlearn-1:964623697992355912>"
+    },
+    "standard_by_category": {
+      "analysis_reports": ["📊", "🔍", "📈"],
+      "performance_speed": ["🚀", "⚡"],
+      "competitive_play": ["⚔️", "🎮"],
+      "money_cash": ["💰", "💵"],
+      "tournaments_winning": ["🏆", "🥇"],
+      "learning_study": ["📚", "📖", "🧠"],
+      "technical_tools": ["🔐", "🛠️", "🎯"]
+    }
+  },
+  
+  "length_guidelines": {
+    "short_update": "800-1200 characters (1-2 features)",
+    "medium_update": "1200-1600 characters (2-3 features)",
+    "major_update": "1600-1900 characters (3-4+ features)"
+  },
+  
+  "real_examples": [
+    {
+      "type": "feature_update",
+      "title": "Multiple Features Update",
+      "content": "@everyone Wizards, todays update makes Study → Practice → Analyze sharper than ever! <:wizpog:964623753025814588>\n\n🗒️ READ MORE: https://blog.gtowizard.com/redesigned_analyzer_and_upgraded_gto_reports/\n\n## 📊 Analyzer – Redesigned Hands Table\n\nThe central hub for reviewing your uploaded hands is now faster and more intuitive.\n\n- Smart filters and natural language search\n- One-click actions to jump from leak to solver\n- Bulk notes, custom reports, cleaner layout\n\n## 🔎 GTO Reports – Preflop Mistakes + Flop View\n\nYour reports now highlight the exact hands costing you the most EV.\n\n- Mistakes panel shows biggest preflop errors by bb lost\n- New General Flop View benchmarks your frequencies vs GTO\n\n## ⚔️ PokerArena – Season 3\n\n- One-click hand marking + improved post-game insights\n- New rewards: Elite subs and exclusive avatars"
+    },
+    {
+      "type": "major_launch",
+      "title": "Biggest Update Ever",
+      "content": "@everyone Wizards, our biggest update ever is here! <:wizpog:964623753025814588> 3-Way Postflop Solving, Nodelocking 2.0, and 50,000+ Final Table ICM Sims are live! 🚀\n\n🗒️ READ MORE: https://blog.gtowizard.com/now_live_3_way_solving_nodelocking_2_0_and_50k_icm_ft_sims\n\n## 🧠 3-way Postflop Solving\n\n- Instantly solve 3-way postflop spots with GTO Wizard AI\n- Supporting: Custom ranges, stack sizes, nodelocking, practice mode\n- Coming soon: ICM, bounties, dynamic sizing\n\n## 🖌️ Nodelocking 2.0\n\n- New Frequency locking algorithm - 3-6x more precise\n- Model opponents based on global frequencies\n- Lock multiple nodes, save as presets\n\n## 🏆 50,000+ Final Table ICM Sims\n\n- Over 53,000 ICM Final Table sims released today\n- Covers 3-max to 8-max, 10bb-70bb mixed stacks\n\nP.S. $40,000+ RakeBack Wizard promo still running!"
+    },
+    {
+      "type": "partnership",
+      "title": "Partnership Announcement",
+      "content": "@everyone Wizards, we have teamed up with RakeBack Wizard to bring you the best rakeback deals in the game. Built for GTO Wizard grinders, by GTO Wizard grinders 🔥\n\n💰 Don't miss out — the August promo is live at RBWizard.com\n\n## RakeBack Wizard is Live — $40,000+ in Launch Prizes!\n\n- 🥇$20,000+ Rake Race\n- 🎟️ $20,000 Flipout Raffles\n- 🎫 Free $150 MTT Tickets (no play required!)\n\n## Why RakeBack Wizard?\n\n🔥 Access private rakeback deals\n📊 Track daily progress with clean dashboard\n🎯 Earn points toward discounted GTO Wizard subs\n\n🚀 Unlock $40K in rewards at RBWizard.com"
+    }
+  ],
+  
+  "what_to_avoid": [
+    "Don't put READ MORE anywhere except Line 2",
+    "Don't skip the READ MORE link (it's mandatory for ALL updates)",
+    "Don't use * for bullets (use - only)",
+    "Don't use ### or #### (use ## only)",
+    "Don't forget @everyone Wizards at start",
+    "Don't forget <:wizpog:964623753025814588> after Line 1",
+    "Don't exceed 2000 characters",
+    "Don't use generic poker slang without GTO Wizard voice",
+    "Don't be vague - include specific numbers and data",
+    "Don't forget blank line after READ MORE"
+  ]
+}
