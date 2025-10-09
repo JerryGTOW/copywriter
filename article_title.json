@@ -1,0 +1,46 @@
+{
+  "content_type": "article_title",
+  "character_limit": 80,
+  "mandatory_structure": {
+    "format": "Compelling title that promises value and sparks curiosity"
+  },
+  "formatting_rules": [
+    "Keep under 80 characters for SEO",
+    "Use power words (Ultimate, Master, Secret, Proven)",
+    "Include numbers when relevant (5 Ways, 3 Secrets)",
+    "Make it benefit-driven",
+    "Create curiosity without clickbait",
+    "Use colons for subtitle structure when helpful"
+  ],
+  "title_formulas": [
+    "How to [Achieve Desired Outcome] Without [Common Pain Point]",
+    "[Number] [Adjective] Ways to [Achieve Goal]",
+    "The Ultimate Guide to [Topic]",
+    "Why [Common Belief] is Wrong (And What to Do Instead)",
+    "[Do Something] Like [Expert/Authority]"
+  ],
+  "real_examples": [
+    {
+      "content": "How to Exploit Opponents Who Don't Study GTO: 5 Proven Strategies"
+    },
+    {
+      "content": "The Hidden Math Behind 3-Way Postflop Spots Nobody Talks About"
+    },
+    {
+      "content": "Why Your Preflop Ranges Are Costing You Money (And How to Fix Them)"
+    },
+    {
+      "content": "Mastering ICM: The Ultimate Guide for Tournament Players"
+    },
+    {
+      "content": "7 Common Mistakes Even Winning Players Make at Final Tables"
+    }
+  ],
+  "what_to_avoid": [
+    "Don't exceed 80 characters",
+    "Don't use clickbait",
+    "Don't be vague",
+    "Don't stuff with keywords",
+    "Don't use ALL CAPS"
+  ]
+}
