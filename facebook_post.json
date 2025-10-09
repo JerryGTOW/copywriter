@@ -1,0 +1,37 @@
+{
+  "content_type": "facebook_post",
+  "character_limit": 500,
+  "mandatory_structure": {
+    "hook": "Opening line that grabs attention",
+    "body": "2-3 paragraphs with line breaks",
+    "cta": "Clear call to action"
+  },
+  "formatting_rules": [
+    "Start with attention-grabbing hook",
+    "Use line breaks for readability (not walls of text)",
+    "Keep paragraphs short (2-3 sentences max)",
+    "Include emojis sparingly (2-4 max)",
+    "End with clear CTA",
+    "Optimal length: 100-250 words"
+  ],
+  "tone": {
+    "style": "Conversational and friendly",
+    "approach": "Community-focused, engaging",
+    "emotion": "Enthusiastic but authentic"
+  },
+  "emojis": {
+    "recommended": ["🎯", "💪", "🔥", "👉", "⚡", "🚀", "💡", "✨"]
+  },
+  "real_examples": [
+    {
+      "content": "Big news for our poker community! 🎯\n\nWe just released the most requested feature of 2024 - 3-way postflop solving with advanced nodelocking. This is a game-changer for anyone serious about mastering multiway spots.\n\nWhat does this mean for you?\n✅ Solve complex 3-way scenarios instantly\n✅ Model opponents with precision\n✅ Practice multiway spots in real-time\n\nReady to level up your game? Check out the full breakdown on our blog 👉 [link]\n\n#PokerStrategy #GTOWizard #PokerTraining"
+    }
+  ],
+  "what_to_avoid": [
+    "Don't create walls of text - use line breaks",
+    "Don't overuse emojis (max 4-5)",
+    "Don't be overly salesy",
+    "Don't exceed 500 words",
+    "Don't forget the CTA"
+  ]
+}
