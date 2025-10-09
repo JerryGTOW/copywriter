@@ -1,0 +1,46 @@
+{
+  "content_type": "video_title",
+  "character_limit": 70,
+  "mandatory_structure": {
+    "format": "Engaging, curiosity-driven title optimized for YouTube/social"
+  },
+  "formatting_rules": [
+    "Keep under 70 characters (mobile truncation)",
+    "Front-load important words",
+    "Use brackets for context [STRATEGY], [WSOP]",
+    "Create urgency or curiosity",
+    "Include numbers when relevant",
+    "Consider using questions"
+  ],
+  "title_formulas": [
+    "[Provocative Statement] - [Context/Explanation]",
+    "I [Did Something Extreme] and Here's What Happened",
+    "[Number] [Adjective] [Things] You Need to Know",
+    "The [Superlative] Way to [Achieve Goal]",
+    "[Question]? [Answer Preview]"
+  ],
+  "real_examples": [
+    {
+      "content": "This ONE Mistake is Killing Your Tournament Results [ICM Explained]"
+    },
+    {
+      "content": "I Played 10,000 Hands Using Only GTO - Here's What I Learned"
+    },
+    {
+      "content": "The Secret to 3-Way Pots Nobody Teaches You [ADVANCED STRATEGY]"
+    },
+    {
+      "content": "How Pro Players ACTUALLY Study Poker (Not What You Think)"
+    },
+    {
+      "content": "Why You're Playing Final Tables Wrong - WSOP Champion Explains"
+    }
+  ],
+  "what_to_avoid": [
+    "Don't exceed 70 characters",
+    "Don't use excessive clickbait",
+    "Don't be misleading",
+    "Don't use too many brackets",
+    "Don't forget mobile viewing"
+  ]
+}
