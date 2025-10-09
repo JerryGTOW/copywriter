@@ -1,0 +1,42 @@
+{
+  "content_type": "banner_copy",
+  "components": {
+    "headline": {
+      "char_limit": 30,
+      "purpose": "Grab attention with main benefit"
+    },
+    "subheadline": {
+      "char_limit": 60,
+      "purpose": "Expand on benefit or add credibility"
+    }
+  },
+  "formatting_rules": [
+    "Headline: 30 chars max - main benefit only",
+    "Subheadline: 60 chars max - supporting detail",
+    "Use numbers for credibility (50,000+)",
+    "Lead with benefit, not feature",
+    "Create urgency when appropriate",
+    "Keep simple - banners are scanned quickly"
+  ],
+  "real_examples": [
+    {
+      "headline": "Master GTO in 30 Days",
+      "subheadline": "50,000+ scenarios. AI-powered solving. Start free."
+    },
+    {
+      "headline": "Crush Final Tables",
+      "subheadline": "Learn ICM from WSOP champions. Try free today."
+    },
+    {
+      "headline": "Train Like a Pro",
+      "subheadline": "Dynamic practice mode adapts to your leaks."
+    }
+  ],
+  "what_to_avoid": [
+    "Don't exceed character limits",
+    "Don't be vague",
+    "Don't use jargon in headlines",
+    "Don't forget the benefit",
+    "Don't be too clever - be clear"
+  ]
+}
