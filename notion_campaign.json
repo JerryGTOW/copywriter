@@ -1,0 +1,44 @@
+{
+  "content_type": "notion_campaign",
+  "output_format": "Structured campaign plan in markdown/notion format",
+  "mandatory_structure": {
+    "campaign_overview": "Name, goal, duration, budget",
+    "target_audience": "Detailed persona",
+    "key_messages": "3-5 core messages",
+    "content_calendar": "Week-by-week breakdown",
+    "channels": "Where to post what",
+    "kpis": "Success metrics",
+    "assets_needed": "List of required content"
+  },
+  "formatting_rules": [
+    "Use markdown headers (##)",
+    "Create tables for calendars",
+    "Use bullet points for lists",
+    "Include checkboxes [ ] for tasks",
+    "Add date ranges [YYYY-MM-DD]",
+    "Structure for easy copy-paste to Notion"
+  ],
+  "sections_to_include": [
+    "Campaign Overview",
+    "Target Audience Persona",
+    "Key Messages & Value Props",
+    "Content Calendar (4 weeks)",
+    "Channel Strategy",
+    "Assets Required",
+    "KPIs & Success Metrics",
+    "Budget Breakdown",
+    "Timeline & Milestones"
+  ],
+  "real_examples": [
+    {
+      "content": "## Campaign: 3-Way Solving Launch\n\n**Duration:** Oct 1-31, 2024\n**Goal:** 1,000 new Elite subscriptions\n**Budget:** $15,000\n\n## Target Audience\n- Serious MTT players (NL200+)\n- Ages 25-45\n- Looking to master multiway spots\n\n## Content Calendar\n\n| Week | Platform | Content Type | Topic |\n|------|----------|--------------|-------|\n| 1 | Discord | Announcement | Feature launch |\n| 1 | X | Thread | How it works |\n| 2 | YouTube | Tutorial | 3-way basics |\n..."
+    }
+  ],
+  "what_to_avoid": [
+    "Don't create generic campaigns",
+    "Don't skip the calendar",
+    "Don't forget KPIs",
+    "Don't make it too long (keep under 2000 words)",
+    "Don't ignore budget constraints"
+  ]
+}
