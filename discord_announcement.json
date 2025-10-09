@@ -1,30 +1,88 @@
 {
   "content_type": "discord_announcement",
   "character_limit": 2000,
+  "platform": "Discord",
   
   "mandatory_structure": {
-    "line_1": "@everyone Wizards, [exciting hook]! <:wizpog:964623753025814588>",
+    "line_1": "@everyone Wizards, [exciting hook]! <::wizpog~1:>",
     "line_2": "🗒️ READ MORE: https://blog.gtowizard.com/[slug]",
     "line_3": "[BLANK LINE]",
-    "line_4_plus": "## [Emoji] [Section Title]\n[Content with bullets]\n[BLANK LINE between sections]"
+    "line_4_plus": "## [Emoji] [Section Title]\n[2-3 sentences description]\n[BLANK LINE]\n- **Key point 1**\n- **Key point 2**\n- **Key point 3**\n[BLANK LINE between sections]"
   },
   
   "formatting_rules": [
-    "ALWAYS start with: @everyone Wizards, [statement]! <:wizpog:964623753025814588>",
+    "ALWAYS start with: @everyone Wizards, [statement]! <::wizpog~1:>",
     "Line 2 MUST be: 🗒️ READ MORE: [blog URL]",
     "Use ## for section headers (NOT bold, NOT ###)",
     "Use - (dash) for bullets, NEVER * (asterisk)",
     "Bold important terms with **text**",
     "Maximum 2000 characters total",
     "Blank line after READ MORE before first section",
-    "Blank line between each section"
+    "Blank line between each section",
+    "Each section: Title + Description (2-3 sentences) + 2-4 bullet points",
+    "Use italics with *text* for emphasis on specific words",
+    "Include specific numbers and data points (50,000+, 3-6x, etc.)"
   ],
   
+  "brand_voice": {
+    "tone": [
+      "Technical yet accessible",
+      "Confident and authoritative",
+      "Aspirational and motivational",
+      "Feature-forward with clear benefits",
+      "Community-driven (users are 'Wizards')"
+    ],
+    "vocabulary": {
+      "openers": [
+        "todays update makes",
+        "we're excited to announce",
+        "our biggest update ever is here",
+        "we have teamed up with",
+        "today, we enter a new era"
+      ],
+      "value_phrases": [
+        "crush the field",
+        "master optimal strategy",
+        "elevate your game",
+        "dominate the tables",
+        "sharper than ever",
+        "never miss a spot",
+        "unlock your full potential",
+        "stay ahead of the competition"
+      ],
+      "power_words": [
+        "instantly",
+        "revolutionary",
+        "game-changing",
+        "powerful",
+        "advanced",
+        "precision",
+        "legendary",
+        "ultimate"
+      ],
+      "community_terms": [
+        "Fellow Wizards",
+        "Wizards",
+        "our community",
+        "you asked, we delivered"
+      ],
+      "technical_terms": [
+        "GTO Wizard AI",
+        "nodelocking",
+        "ICM scenarios",
+        "postflop solving",
+        "frequency locking",
+        "EV optimization",
+        "hand history analysis"
+      ]
+    }
+  },
+  
   "emojis": {
-    "custom": {
-      "excitement": "<:wizpog-1:964623753025814588>",
-      "closing": "<:wizsalute-1:964623724873658488>",
-      "learning": "<:wizlearn-1:964623697992355912>"
+    "custom_discord": {
+      "excitement": "<::wizpog~1:>",
+      "closing": "<::wizsalute~1:>",
+      "learning": "<::wizlearn~1:>"
     },
     "standard_by_category": {
       "analysis_reports": ["📊", "🔍", "📈"],
@@ -33,44 +91,159 @@
       "money_cash": ["💰", "💵"],
       "tournaments_winning": ["🏆", "🥇"],
       "learning_study": ["📚", "📖", "🧠"],
-      "technical_tools": ["🔐", "🛠️", "🎯"]
+      "technical_tools": ["🔐", "🛠️", "🎯"],
+      "new_features": ["✨", "🎉", "🔥"]
+    },
+    "usage_guide": {
+      "opening": "Always use <::wizpog~1:> after first line",
+      "sections": "Choose emoji that matches section category",
+      "inline": "Use standard emojis (🔥💪🚀) sparingly within text",
+      "closing": "Optional <::wizsalute~1:> for final line"
     }
   },
   
   "length_guidelines": {
-    "short_update": "800-1200 characters (1-2 features)",
-    "medium_update": "1200-1600 characters (2-3 features)",
-    "major_update": "1600-1900 characters (3-4+ features)"
+    "short_update": {
+      "chars": "800-1200",
+      "sections": "1-2 features",
+      "use_case": "Minor improvements, single feature launches"
+    },
+    "medium_update": {
+      "chars": "1200-1600",
+      "sections": "2-3 features",
+      "use_case": "Multiple feature updates, seasonal announcements"
+    },
+    "major_update": {
+      "chars": "1600-1900",
+      "sections": "3-4+ features",
+      "use_case": "Major launches, ecosystem updates, partnerships"
+    }
+  },
+  
+  "content_patterns": {
+    "feature_update": {
+      "structure": "Hook about improvement → READ MORE → 2-4 feature sections → Optional reminder/CTA",
+      "hook_formula": "[Product area] just got [comparative adjective]",
+      "example_hooks": [
+        "todays update makes Study → Practice → Analyze sharper than ever",
+        "we're rolling out powerful new upgrades",
+        "we've just launched the most powerful feature in GTO Wizard's history"
+      ]
+    },
+    "major_launch": {
+      "structure": "Superlative hook + list all features → READ MORE → Detailed section per feature → Reminder",
+      "hook_formula": "our [superlative] update [temporal phrase]! [List all features]",
+      "example_hooks": [
+        "our biggest update ever is here! 3-Way Postflop Solving, Nodelocking 2.0, and 50,000+ Final Table ICM Sims are live",
+        "today, we enter a new era! GTO Wizard is evolving into a complete poker ecosystem"
+      ]
+    },
+    "partnership": {
+      "structure": "Partnership announcement → Value prop → READ MORE → Prize/offer breakdown → Why it matters",
+      "hook_formula": "we have teamed up with [Partner] to bring you [value]",
+      "example_hooks": [
+        "we have teamed up with RakeBack Wizard to bring you the best rakeback deals in the game"
+      ]
+    },
+    "seasonal": {
+      "structure": "Season announcement → What's new → READ MORE → Feature details → Timeline/Prizes",
+      "hook_formula": "[Feature] [Season/Version Number] is [here/live]",
+      "example_hooks": [
+        "PokerArena Season 2 is here — now with new Ranks & Divisions",
+        "today we are introducing the next evolution of Play Mode"
+      ]
+    }
   },
   
   "real_examples": [
     {
       "type": "feature_update",
-      "title": "Multiple Features Update",
-      "content": "@everyone Wizards, todays update makes Study → Practice → Analyze sharper than ever! <:wizpog:964623753025814588>\n\n🗒️ READ MORE: https://blog.gtowizard.com/redesigned_analyzer_and_upgraded_gto_reports/\n\n## 📊 Analyzer – Redesigned Hands Table\n\nThe central hub for reviewing your uploaded hands is now faster and more intuitive.\n\n- Smart filters and natural language search\n- One-click actions to jump from leak to solver\n- Bulk notes, custom reports, cleaner layout\n\n## 🔎 GTO Reports – Preflop Mistakes + Flop View\n\nYour reports now highlight the exact hands costing you the most EV.\n\n- Mistakes panel shows biggest preflop errors by bb lost\n- New General Flop View benchmarks your frequencies vs GTO\n\n## ⚔️ PokerArena – Season 3\n\n- One-click hand marking + improved post-game insights\n- New rewards: Elite subs and exclusive avatars"
+      "title": "Multiple Features Update (Sept 2024)",
+      "char_count": 892,
+      "content": "@everyone Wizards, todays update makes Study → Practice → Analyze sharper than ever! <::wizpog~1:>\n\n🗒️ READ MORE: https://blog.gtowizard.com/redesigned_analyzer_and_upgraded_gto_reports/\n\n## 📊 Analyzer – Redesigned Hands Table\n\nThe central hub for reviewing your uploaded hands is now faster and more intuitive.\n\n- Smart filters and natural language search (type \"RFI\" → see every related filter)\n- One-click actions to jump straight from leak → solver or drill\n- Bulk notes, custom reports, and a cleaner adjustable layout\n\n## 🔎 GTO Reports – Preflop Mistakes + Flop View\n\nYour reports now highlight the *exact hands costing you the most EV*.\n\n- Mistakes panel shows your biggest preflop errors by bb lost\n- New General Flop View benchmarks your flop frequencies vs. GTO\n\n## 🔐 Nodelocking – User-Driven Refinements\n\nWe've improved nodelocking based on your feedback to make study more precise and intuitive.\n\n- Lock frequencies for specific hand classes (e.g. top pair = 65% bet)\n- Hover shortcuts + right-click combo expansion\n- Streamlined UX for smoother workflows\n\n## 🎯 Practice – 3-Way Drills\n\nYou can now train *multiway postflop spots* directly in Practice mode.\n\n## ⚔️ PokerArena – Season 3\n\n- One-click hand marking during matches + improved post-game insights\n- New rewards: Elite subscriptions and exclusive avatars for leaderboard finishers (*Season ends Oct 1st, 9 AM CEST*)"
     },
     {
       "type": "major_launch",
-      "title": "Biggest Update Ever",
-      "content": "@everyone Wizards, our biggest update ever is here! <:wizpog:964623753025814588> 3-Way Postflop Solving, Nodelocking 2.0, and 50,000+ Final Table ICM Sims are live! 🚀\n\n🗒️ READ MORE: https://blog.gtowizard.com/now_live_3_way_solving_nodelocking_2_0_and_50k_icm_ft_sims\n\n## 🧠 3-way Postflop Solving\n\n- Instantly solve 3-way postflop spots with GTO Wizard AI\n- Supporting: Custom ranges, stack sizes, nodelocking, practice mode\n- Coming soon: ICM, bounties, dynamic sizing\n\n## 🖌️ Nodelocking 2.0\n\n- New Frequency locking algorithm - 3-6x more precise\n- Model opponents based on global frequencies\n- Lock multiple nodes, save as presets\n\n## 🏆 50,000+ Final Table ICM Sims\n\n- Over 53,000 ICM Final Table sims released today\n- Covers 3-max to 8-max, 10bb-70bb mixed stacks\n\nP.S. $40,000+ RakeBack Wizard promo still running!"
+      "title": "Biggest Update Ever (Aug 2024)",
+      "char_count": 1156,
+      "content": "@everyone Wizards, our biggest update ever is here! <::wizpog~1:> 3-Way Postflop Solving, Nodelocking 2.0, and 50,000+ Final Table ICM Sims are live! 🚀\n\n🗒️ READ MORE: https://blog.gtowizard.com/now_live_3_way_solving_nodelocking_2_0_and_50k_icm_ft_sims\n\n## 🧠 3-way Postflop Solving\n\n- Instantly solve 3-way postflop spots to high precision with **GTO Wizard AI**. Achieve in seconds what used to take weeks.\n- **Supporting:** Custom ranges, stack & bet sizes, nodelocking, practice mode, mixed stacks, side pots, rake & bunching effect.\n- **Coming soon:** ICM, bounties, dynamic bet sizing, aggregate reports and 3-way preflop solving.\n\n## 🖌️ Nodelocking 2.0\n\n- New **Frequency locking** algorithm that achieves minimally exploitable strategies. It's 3-6x more precise than before!\n- Model precisely your opponents based on their global frequencies and learn to maximally exploit them\n- Lock multiple nodes at once, merge frequency & manual locks, and save them as presets\n- Build and test counter-strategies faster than ever with our **new Nodelocking UI**\n\n## 🏆 50,000+ Final Table ICM Sims\n\n- No, it's not a typo. We're releasing over 53,000 ICM Final Table sims today!\n- Covers **3-max to 8-max, 10bb–70bb mixed stacks**, and **200-player field** structures\n- Spend less time solving and more time studying with instantly available, closely matched sims\n\n## ⚔️ PokerArena Season 2\n\n- After a success of Season 1, we are coming back with Season 2!\n- **Introducing Ranks:** You still get your rating number, but now it also determines your Rank and Division *(Iron, Bronze, Silver, Gold and Diamond)*\n- **New Prizes** for TOP 3 + Everyone in TOP 100 gets 10% off GTO Wizard subscription of their choice *(season ends 1st of September, 9AM CEST)*\n\nP.S. Reminder: the **$40,000+ RakeBack Wizard promo** is still running – grab the best deals plus up to **$150 in tournament money** for GTO Wizard subscribers, no play required! **[Claim here](https://rbwizard.com/promo)**"
     },
     {
       "type": "partnership",
-      "title": "Partnership Announcement",
-      "content": "@everyone Wizards, we have teamed up with RakeBack Wizard to bring you the best rakeback deals in the game. Built for GTO Wizard grinders, by GTO Wizard grinders 🔥\n\n💰 Don't miss out — the August promo is live at RBWizard.com\n\n## RakeBack Wizard is Live — $40,000+ in Launch Prizes!\n\n- 🥇$20,000+ Rake Race\n- 🎟️ $20,000 Flipout Raffles\n- 🎫 Free $150 MTT Tickets (no play required!)\n\n## Why RakeBack Wizard?\n\n🔥 Access private rakeback deals\n📊 Track daily progress with clean dashboard\n🎯 Earn points toward discounted GTO Wizard subs\n\n🚀 Unlock $40K in rewards at RBWizard.com"
+      "title": "Partnership Announcement (Aug 2025)",
+      "char_count": 876,
+      "content": "@everyone Wizards, we have teamed up with RakeBack Wizard to bring you the best rakeback deals in the game. Built *for* GTO Wizard grinders, *by* GTO Wizard grinders 🔥\n\n💰 Don't miss out — the August promo is live at RBWizard.com\n\n## RakeBack Wizard is Live — $40,000+ in Launch Prizes!\n\n- **🥇$20,000+ Rake Race**\nFinish top 40 to win cash + GTO Wizard Elite subscriptions.\n- **🎟️ $20,000 Flipout Raffles**\nHit $50 or $500 in tracked rake to enter one or both $10K raffles — no leaderboard grinding required.\n- **🎫 Free $150 MTT Tickets** (no play required!)\nAvailable exclusively to GTO Wizard Premium and Elite users who join via RakeBack Wizard *(Only valid for accounts created through [RBWizard.com](http://rbwizard.com/promo)).*\n\n## Why RakeBack Wizard?\n\n🔥 Access private rakeback deals for new poker accounts\n📊 Track your daily progress with a clean, modern dashboard\n🎯 Earn points toward discounted GTO Wizard subscriptions\n🛠️ Unlock extra rewards with just $1,000 (or less) in cumulative rake\n\n**🤫 Some deals are just too good to share publicly — DM @RakeBackWizard Steve to see why.**\n\n🚀 **Unlock $40K in rewards at [RBWizard.com](http://rbwizard.com/promo)**"
+    },
+    {
+      "type": "new_product",
+      "title": "New Era Launch (July 2025)",
+      "char_count": 1234,
+      "content": "@everyone Wizards, today, we enter a new era! GTO Wizard is evolving into a complete poker ecosystem with two powerful new products leading the way <::wizpog~1:>\n\n🗒️ **READ MORE:** https://blog.gtowizard.com/enter_the_poker_arena_a_new_era_of_competitive_poker_has_begun\n\n## ⚔️ Introducing PokerArena [(Read more)](https://blog.gtowizard.com/enter_the_poker_arena_a_new_era_of_competitive_poker_has_begun)\n\nSame heads-up battles *(formerly PlayMode)* but now with monthly seasons, rewards, new **iOS App** & more! 🚀\n\n**🏆 Season One**\n- Preseason is over, season One starts July 1st *(rating has been soft reset)*\n- Introducing monthly seasonal format with prizes for top 3 Wizards\n\n**📱 New iOS App is Here!**\n- Enter the Arena anywhere! PokerArena is now on iOS so you can continue your grind on the go.\n- **[Download iOS App Now!](https://apps.apple.com/us/app/pokerarena-by-gto-wizard/id6742486598)**\n\n**🎮 Gameplay Enhancements**\n- New avatars, preseason players keep their legacy avatar\n- Improved matchmaking screen, dashboard & more\n- Learn with free GTO Wizard HH Analysis after every game\n\n## <::wizlearn~1:> Table Wizard (Beta) Has Arrived [(Read more)](https://blog.gtowizard.com/introducing_table_wizard_the_ultimate_table_management_software)\n\nManaging multiple tables shouldn't feel like a boss fight. Whether you're playing one table or twenty, **Table Wizard** helps you stay focused, sharp and in control of your session.\n\n**🔖 Key Features**\n- **Custom layouts** (static or auto-responsive), build what works for you\n- **Smart overlays** for pot odds, SPR, RNG & more\n- **Custom hotkeys** to speed up your actions, never miss a big spot\n- **Automatic hand uploads** straight to Analyzer 2.0, review faster and study smarter\n- **Available now** for PokerStars & iPoker (more coming soon)\n\n👉 **[Jump into PokerArena](https://gtowizard.com/pokerarena)**\n👉 **[Try out Table Wizard](https://gtowizard.com/table-wizard)**"
+    },
+    {
+      "type": "events_launch",
+      "title": "Events Feature Launch (April 2025)",
+      "char_count": 1089,
+      "content": "@everyone Wizards, we've just dropped a legendary update! 🔥 Replay real **WSOP & SCOOP final tables** with synced video replays in our brand-new **Events** feature, and dive into wild Mississippi Straddle & Double Straddle pots! <::wizpog~1:>\n\n🗒️ **READ MORE:** https://blog.gtowizard.com/watch-learn-replay-legendary-final-tables\n\n## 🏆 Introducing EVENTS – Replay Legendary Final Tables!\n\nStudy real tournament HHs like never before:\n\n- **Exact chip stacks, bet sizes and payouts** from WSOP & SCOOP final tables\n- **Synced video replays** so you can Watch & Learn\n- **Seamless postflop solving** with ICM – go from preflop to river instantly\n\n## 💰 New Cash Game Solutions – Mississippi & Double Straddle\n\nExperience the chaos of deep-stacked straddle games with realistic conditions:\n\n- **Mississippi Straddle** – 112 new spots, 4bb–7bb opens, stacks up to 800bb\n- **Double Straddle** – 352 new spots, 8bb–14bb opens, stacks up to 1600bb\n- Live rake (10% with 2bb cap) and ChipEV versions included\n\nMore legendary final tables are coming soon — **let us know** which ones you want next! 👀\n\n---\n\n**GTO Wizard**\n\n**Watch & Learn: Replay Legendary Final Tables!**\n\nOur new Events feature recreates iconic WSOP and SCOOP final tables, precisely solved with exact chip stacks, bet sizes, and prize structures, complete with automatically synced video replays. Relive legendary poker moments, analyze critical decisions, and elevate your game by studying authentic tournament scenarios. Stay tuned—more historic f..."
+    },
+    {
+      "type": "ai_performance",
+      "title": "AI Performance Upgrade (Nov 2024)",
+      "char_count": 1076,
+      "content": "@everyone Wizards, we're excited to announce a major update featuring **HH Analyzer 2.0**, GTO Wizard AI improvements, and much more! <::wizpog~1:>\n\n🗒️ **READ MORE:** https://blog.gtowizard.com/redefining-precision-introducing-hh-analyzer-2-0-and-much-more\n\n## 📈 HH Analyzer 2.0 – Precision Redefined\n\nThe most advanced tool for analyzing and refining your poker strategy is here! HH Analyzer 2.0 includes:\n\n- **Advanced stats & filters:** Break down your performance by preflop action, position, and street (Flop, Turn, River).\n- **Improved Hands Table:** Customize columns, sort by stats like Avg. EV Loss, and spot blunders faster than ever.\n- **Saved Reports:** Create, compare, and revisit custom reports to track your progress with ease.\n\n## 🚀 GTO Wizard AI Performance Upgrade\n\nWe've enhanced the GTO Wizard AI engine for unmatched accuracy. With even sharper and more consistent solutions, you'll achieve ultimate precision in strategy refinement. **Flop exploitability has been reduced from 0.209% to 0.165%—a 21% improvement!**\n\n## ⚔️ Play Mode Enhancements\n\nNew heads-up matchmaking, post-match win/loss stats, Auto Check/Fold, Bluff reveals, 4-color deck, and more!\n\n## 📚 New Study Plans – PKO + Spin & Go\n\nWe're launching two brand-new study plans to help you crush two of the most dynamic poker formats!\n\n- **PKO Study Plan:** Master bounty strategy, stack management, bubble play, and more.\n- **Spin & Go Study Plan:** Hone preflop tactics, postflop mastery, and key strategies to dominate the tables.\n\n## 🔗 P.S. We're Hiring!\n\nIf you're passionate about poker, cutting-edge technology, and making a real impact, now's your chance! Join a fully remote, global team dedicated to transforming the poker landscape with innovative tools and ideas.\n👉 **[Explore 11 new open positions here](https://gtowizard.com/careers)**"
+    },
+    {
+      "type": "custom_reports",
+      "title": "Custom Aggregated Reports (June 2025)",
+      "char_count": 1445,
+      "content": "@everyone Wizards, we've just launched the most powerful feature in GTO Wizard's history: **Customizable Aggregated Reports!** <::wizpog~1:>\n\n🗒️ **READ MORE:** https://blog.gtowizard.com/introducing_custom_aggregated_reports\n\n## 🧠 Customizable Aggregated Reports – A New Era in Poker Analysis\n\nWe've redefined what's possible in poker study. You can now generate fully **custom aggregated reports** across all **1755 strategically distinct flops**. All solved in just a few minutes with **GTO Wizard AI**.\n\nNo more waiting months or renting expensive servers. With just a few clicks, you can:\n\n- Choose your **own ranges, stack depths, rake structures, bet sizes (fixed or dynamic), ICM, bounties**, and more\n- Group flops by texture and uncover **critical heuristics**\n- Create simplified, high-EV strategies that work across the entire flop set\n\nThese reports are exclusive to **Elite subscribers**, powered by our new **Power Credits** system. Every Elite user has already received **500 FREE credits** to get started! <::wizpog~1:>\n\n## 🎯 Introducing Dynamic Sizing 2.0 – More Accurate. More Consistent. More Powerful.\n\nOur signature feature just got a major upgrade. **Dynamic Sizing 2.0** is a completely new algorithm that delivers sharper, **more reliable betting strategies**, even in the most complex spots 🔥 Instead of using complex decision rules to know which actions to prune, we now use a simpler approach that yields better results. That means:\n\n- **Higher accuracy** in selecting the best sizing\n- **Stable results** across the same spot\n- **Support for more complex trees** (up to 3 bets + 2 raises)\n\nDynamic Sizing 2.0 consistently outperforms the old version, especially in tough deep-stacked scenarios. It's already live – **and it's now the default**. *(ugrprevwo)*\n\n---\n\n**GTO Wizard**\n\n**Introducing Custom Aggregated Reports: A New Era in Poker Analysis**\n\nForget renting expensive servers and waiting months for solutions. Now, with one click, you get the optimal strategy across all 1755 strategically distinct flops, solved in minutes, fully customizable, and displayed in a clean, intuitive interface."
+    },
+    {
+      "type": "ranked_matchmaking",
+      "title": "Ranked 1v1 Launch (May 2025)",
+      "char_count": 891,
+      "content": "@everyone Wizards, today we are introducing the next evolution of **Play Mode – 1v1 Heads-Up Ranked Matchmaking** is here! <::wizpog~1:>\n\n🗒️ **READ MORE:** https://blog.gtowizard.com/ranked-1v1-matchmaking-is-live\n\n## ⚔️ Ranked 1v1 Matchmaking is LIVE!\n\n- Challenge fellow Wizards in heads-up SnGs, put your skills to the test, and climb the leaderboard!\n- Every match now includes a **free post-game analysis** powered by our Analyzer to help you learn from every decision.\n- Your **ELO rating is based on both accuracy and results**, and updates after each match.\n- Check your standing on the **global leaderboard** and compete to prove **who is the best Wizard of them all!** <::wizpog~1:>\n- We're currently in **Preseason & Early Access**. Expect continuous updates, improvements, and soon official ranked seasons\n\n## 📣 We want your feedback!\n\nHelp us shape the future of Play Mode – tell us what you love, what feels off, and what you would like to see next.\n\nNow is the perfect time to sharpen your skills and start climbing. This is your moment to rise...\n**Who will take the top spot? Who will be the best Wizard? 🏆**\n\n👉 **[Play Now](https://gtowizard.com/play-mode)** 👈"
+    },
+    {
+      "type": "flop_reports",
+      "title": "GTO Reports Flop (April 2025)",
+      "char_count": 1156,
+      "content": "@everyone Wizards, today we're rolling out powerful new upgrades: GTO Reports, new GG solutions & more! <::wizpog~1:>\n\n🗒️ **READ MORE:** https://blog.gtowizard.com/gto-reports-flop-are-here\n\n## 📊 GTO Reports Flop are here!\n\n- Upload your cash game hand histories (bigger samples = better insights).\n- **Instantly compare** your flop frequencies to GTO.\n- **See optimal frequencies** for all major flop betting lines and sizes.\n- **Break it down** by relative position, preflop action, and preflop aggression.\n- More streets and formats coming soon!\n\n## 💰 New Solutions: 9-Max GG Ante Preflop\n\nWe're dropping a treasure chest for GG cash grinders: 240 brand-new solutions adjusted for nuances of GG Preflop rake.\n\n- **Exact GG structure:** 0.5 bb × 9 antes (4.5 bb total) with three rake models – cEV, NL50, NL500.\n- **Full depth & sizing grid:** 12 stack depths from 20 bb–200 bb and four open sizes – 2x, 2.5x, 3x, 4x.\n- **Simple & General trees:** Choose between a Simple 3-bet/fold strategy, or a more General strategy that includes cold-calls and SB limps.\n\n## 📂 New Uploads Section\n\nManaging hand histories just got a whole lot easier - the new Uploads Page unifies every hand into a single command center.\n\n- **Unified view:** Browse, filter, and organize your uploads in one place.\n- **Flexible date grouping:** Sort by day or month of play, or by upload date, for fast session review and bulk clean-up.\n- **One-click reports:** Instantly open filtered hand history tables, sortable by EV-loss, GTO score, and more.\n- **Visualized performance:** Color-coded bars highlight your correct moves, mistakes, and average EV-loss in bb/100 for each batch.\n\nEnjoy & Good luck Wizards! <::wizpog~1:>"
     }
   ],
   
   "what_to_avoid": [
     "Don't put READ MORE anywhere except Line 2",
     "Don't skip the READ MORE link (it's mandatory for ALL updates)",
-    "Don't use * for bullets (use - only)",
-    "Don't use ### or #### (use ## only)",
+    "Don't use * (asterisk) for bullets - use - (dash) only",
+    "Don't use ### or #### - use ## only",
     "Don't forget @everyone Wizards at start",
-    "Don't forget <:wizpog:964623753025814588> after Line 1",
-    "Don't exceed 2000 characters",
+    "Don't forget <:wizpog~1:> after Line 1",
+    "Don't exceed 2000 characters total",
     "Don't use generic poker slang without GTO Wizard voice",
-    "Don't be vague - include specific numbers and data",
-    "Don't forget blank line after READ MORE"
+    "Don't be vague - always include specific numbers and data",
+    "Don't forget blank line after READ MORE",
+    "Don't use overly salesy language - focus on features and benefits",
+    "Don't ignore the community aspect - users are 'Wizards'",
+    "Don't forget to bold important terms with **text**",
+    "Don't overuse emojis - strategic placement only",
+    "Don't forget P.S. reminders for ongoing promos when relevant"
+  ],
+  
+  "quality_checklist": [
+    "✅ Starts with @everyone Wizards",
+    "✅ Has <::wizpog~1:> after Line 1",
+    "✅ Includes 🗒️ READ MORE: [blog URL] on Line 2",
+    "✅ Blank line after READ MORE",
+    "✅ 2-4 sections with ## headers",
+    "✅ Each section has description + bullets",
+    "✅ Uses - for bullets (never *)",
+    "✅ Important terms bolded with **text**",
+    "✅ Under 2000 characters",
+    "✅ Clear value propositions in each section",
+    "✅ Specific numbers and data included",
+    "✅ Appropriate emojis for section types",
+    "✅ Community-driven language ('Wizards', 'you', 'your')",
+    "✅ P.S. reminder included if there's an ongoing promo"
   ]
 }
