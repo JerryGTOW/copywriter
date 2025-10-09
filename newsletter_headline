@@ -1,1 +1,359 @@
-
+{
+  "content_type": "newsletter_headline",
+  "purpose": "Generate high-performing email subject lines and preview text variations",
+  "platform": "Email (CRM) - Headlines Only",
+  
+  "headline_components": {
+    "subject_line": {
+      "char_limit": 50,
+      "mobile_display": "~30-40 characters visible on mobile",
+      "desktop_display": "~60-70 characters visible on desktop",
+      "optimization_target": "Mobile-first (50 chars or less)"
+    },
+    "preview_text": {
+      "char_limit": 90,
+      "mobile_display": "~40-60 characters",
+      "desktop_display": "~100-140 characters",
+      "purpose": "Complement subject line, don't repeat it"
+    }
+  },
+  
+  "subject_line_formulas": {
+    "urgency_scarcity": {
+      "formula": "[Timeframe] left: [Benefit/Offer]",
+      "examples": [
+        "One week left: Free tickets worth $150",
+        "48 hours: Your 50% discount expires",
+        "Last chance: WCOOP prep before series starts"
+      ],
+      "best_for": ["Limited-time offers", "Event deadlines", "Promo endings"]
+    },
+    "curiosity_gap": {
+      "formula": "[Intriguing statement] + [Incomplete information]",
+      "examples": [
+        "Most Players Stop Here",
+        "One mistake at 3 a.m. can cost the series",
+        "The structure behind every big WCOOP score",
+        "Every extra table is more EV on the line"
+      ],
+      "best_for": ["Product launches", "Educational content", "Premium features"]
+    },
+    "direct_benefit": {
+      "formula": "[Action] + [Specific Benefit]",
+      "examples": [
+        "Add MTT to your gameplan — now 30% off",
+        "Get your share of $20,000",
+        "Unlock the next level of GTO Wizard"
+      ],
+      "best_for": ["Upgrade campaigns", "Clear offers", "Feature announcements"]
+    },
+    "personal_address": {
+      "formula": "[Emoji] + Hey/Hi Wizard, + [Statement]",
+      "examples": [
+        "🔥 Hey Wizard, We Miss You! Check Out What's New",
+        "🔥 Hey Wizard, Claim Your 15% OFF Now – Limited Time!",
+        "🧠 You Have Never Studied Poker Like This Before"
+      ],
+      "best_for": ["Win-back campaigns", "Personal outreach", "Re-engagement"]
+    },
+    "news_announcement": {
+      "formula": "[Superlative] + [What's New]",
+      "examples": [
+        "The Biggest GTO Wizard Update Ever is Here",
+        "Smarter Reports. Cleaner Analysis. Multiway Practice.",
+        "The Most Powerful GTO Wizard Feature Just Dropped"
+      ],
+      "best_for": ["Patch notes", "Major launches", "Product updates"]
+    },
+    "question_hook": {
+      "formula": "[Provocative Question]",
+      "examples": [
+        "Ready for WCOOP's toughest grind?",
+        "How confident are you at final tables?",
+        "Are you leaving EV on the table?"
+      ],
+      "best_for": ["Problem awareness", "Qualification", "Seasonal campaigns"]
+    },
+    "social_proof": {
+      "formula": "[Who] + [Achievement/Action]",
+      "examples": [
+        "The Cash Game Crushers Train Without Limits",
+        "How Elite Players Prepare for WSOP",
+        "What Top Regs Do Differently"
+      ],
+      "best_for": ["Aspirational messaging", "Premium upgrades", "Social validation"]
+    },
+    "number_driven": {
+      "formula": "[Number] + [Benefit/Feature]",
+      "examples": [
+        "50,000+ Final Table ICM Sims Are Live",
+        "3-way Solving, Nodelocking 2.0 & 50k+ ICM Sims",
+        "$40,000 in prizes this August"
+      ],
+      "best_for": ["Big announcements", "Quantifiable value", "Launch campaigns"]
+    }
+  },
+  
+  "preview_text_patterns": {
+    "expansion": {
+      "purpose": "Add context to subject line",
+      "formula": "[Additional detail or benefit not in subject]",
+      "examples": {
+        "subject": "The Biggest GTO Wizard Update Ever is Here",
+        "preview": "3-way Solving, Nodelocking 2.0 & 50k+ ICM Sims."
+      }
+    },
+    "continuation": {
+      "purpose": "Complete the thought from subject",
+      "formula": "[Natural continuation of subject line]",
+      "examples": {
+        "subject": "Most Players Stop Here",
+        "preview": "… the serious ones unlock Starter and keep climbing."
+      }
+    },
+    "benefit_stack": {
+      "purpose": "List multiple benefits",
+      "formula": "[Benefit 1], [Benefit 2], and [Benefit 3]",
+      "examples": {
+        "subject": "Your exclusive GTO Wizard offer",
+        "preview": "Train smarter, study postflop in depth, and review your own hands — limited 10-day offer."
+      }
+    },
+    "urgency_reminder": {
+      "purpose": "Add time pressure",
+      "formula": "[Deadline] + [Consequence]",
+      "examples": {
+        "subject": "Your August reward: Free tickets worth $150",
+        "preview": "One week left to claim before the promotion closes on Aug 31."
+      }
+    },
+    "value_proposition": {
+      "purpose": "Clarify the core value",
+      "formula": "[What it does] + [Why it matters]",
+      "examples": {
+        "subject": "The structure behind every big WCOOP score",
+        "preview": "Table Wizard protects your EV when you're 12+ tabling under max pressure."
+      }
+    }
+  },
+  
+  "emoji_usage": {
+    "when_to_use": [
+      "Win-back campaigns (🔥 for urgency/excitement)",
+      "Major launches (🧠 for learning/innovation, 🚀 for launch)",
+      "Personal outreach (creates warmth and attention)",
+      "Limited-time offers (⏰ for urgency, 💰 for money)"
+    ],
+    "placement": "Start of subject line for maximum visibility",
+    "best_emojis": {
+      "urgency": ["🔥", "⏰", "⚡"],
+      "learning": ["🧠", "📚", "🎯"],
+      "money_value": ["💰", "💵", "🎁"],
+      "achievement": ["🏆", "🥇", "✨"],
+      "new_release": ["🚀", "🎉", "✨"]
+    },
+    "avoid": "Don't use more than 1 emoji per subject line"
+  },
+  
+  "power_words": {
+    "urgency": ["Now", "Today", "Last chance", "Ending soon", "Limited", "Final"],
+    "exclusivity": ["Exclusive", "Private", "Special", "Your", "Personal", "Custom"],
+    "curiosity": ["Secret", "Behind", "Never", "Most", "Biggest", "Hidden"],
+    "achievement": ["Crush", "Master", "Dominate", "Win", "Unlock", "Achieve"],
+    "loss_aversion": ["Don't miss", "Last chance", "Before it's gone", "Expires", "Closing"],
+    "social_proof": ["Top players", "Elite", "Pros", "Winners", "Champions", "Crushers"]
+  },
+  
+  "words_to_avoid": {
+    "spam_triggers": [
+      "FREE!!!", "ACT NOW", "LIMITED TIME ONLY!!!", "CLICK HERE",
+      "URGENT!!!", "CONGRATULATIONS", "WINNER", "CASH BONUS",
+      "Dear friend", "This is not spam", "Make money fast"
+    ],
+    "overused": [
+      "Amazing", "Awesome", "Revolutionary", "Game-changing" (unless truly accurate),
+      "Don't miss out" (prefer specific benefit),
+      "Check this out" (too vague)
+    ],
+    "vague": [
+      "Newsletter", "Update" (without specifics),
+      "Important information", "Monthly recap",
+      "News from us"
+    ]
+  },
+  
+  "testing_framework": {
+    "variables_to_test": {
+      "emoji_vs_no_emoji": "Test performance with/without emoji",
+      "question_vs_statement": "Does question format increase opens?",
+      "personalization": "Hey Wizard vs generic greeting",
+      "urgency_vs_benefit": "Time-based vs value-based framing",
+      "length": "Short (20-30 chars) vs optimal (40-50 chars)",
+      "number_inclusion": "With specific numbers vs without"
+    },
+    "sample_ab_tests": [
+      {
+        "test_name": "Emoji Impact",
+        "variant_a": "🔥 Hey Wizard, We Miss You! Check Out What's New",
+        "variant_b": "Hey Wizard, We Miss You! Check Out What's New",
+        "hypothesis": "Emoji increases open rate by creating visual contrast"
+      },
+      {
+        "test_name": "Question vs Statement",
+        "variant_a": "Ready for WCOOP's toughest grind?",
+        "variant_b": "Prepare for WCOOP's toughest grind",
+        "hypothesis": "Question format increases engagement through self-reflection"
+      },
+      {
+        "test_name": "Specific vs Generic Value",
+        "variant_a": "Your August reward: Free tickets worth $150",
+        "variant_b": "Your August reward is here",
+        "hypothesis": "Specific dollar amount increases perceived value"
+      }
+    ]
+  },
+  
+  "segmentation_guidelines": {
+    "by_user_tier": {
+      "free_users": {
+        "focus": "Upgrade benefits, missing features, social proof",
+        "example": "The Cash Game Crushers Train Without Limits"
+      },
+      "paid_users": {
+        "focus": "New features, advanced tools, exclusive access",
+        "example": "The structure behind every big WCOOP score"
+      },
+      "churned_users": {
+        "focus": "What's new, incentives, warm personal tone",
+        "example": "🔥 Hey Wizard, We Miss You! Check Out What's New"
+      }
+    },
+    "by_campaign_type": {
+      "patch_notes": {
+        "focus": "What's new, biggest feature first",
+        "example": "The Biggest GTO Wizard Update Ever is Here"
+      },
+      "upsell": {
+        "focus": "Benefit, limitation removal, aspiration",
+        "example": "Most Players Stop Here"
+      },
+      "seasonal": {
+        "focus": "Event tie-in, preparation, urgency",
+        "example": "One mistake at 3 a.m. can cost the series"
+      },
+      "partnership": {
+        "focus": "Dollar value, prizes, simple action",
+        "example": "Flip $50 into $10,000+ Prizes This August"
+      }
+    }
+  },
+  
+  "real_examples_by_performance": {
+    "high_performers": [
+      {
+        "subject": "🔥 Hey Wizard, We Miss You! Check Out What's New",
+        "preview": "Exclusive offer - Claim your 15% OFF now",
+        "type": "Win-back with offer",
+        "why_it_works": "Emoji grabs attention, personal address, clear benefit in preview, urgency",
+        "open_rate_estimate": "High (25-35% for win-back)"
+      },
+      {
+        "subject": "One mistake at 3 a.m. can cost the series",
+        "preview": "Table Wizard ensures focus and execution never drop.",
+        "type": "Seasonal campaign",
+        "why_it_works": "Vivid pain point, specific scenario, clear solution in preview",
+        "open_rate_estimate": "High (30-40% for engaged users)"
+      },
+      {
+        "subject": "Your August reward: Free tickets worth $150",
+        "preview": "One week left to claim before the promotion closes on Aug 31.",
+        "type": "Partnership reminder",
+        "why_it_works": "Specific dollar value, urgency in preview, clear deadline",
+        "open_rate_estimate": "Very High (35-45% for promotion)"
+      },
+      {
+        "subject": "Most Players Stop Here",
+        "preview": "… the serious ones unlock Starter and keep climbing.",
+        "type": "Upsell",
+        "why_it_works": "Curiosity gap, social proof, continuation in preview",
+        "open_rate_estimate": "High (28-38% for qualified segment)"
+      }
+    ],
+    "moderate_performers": [
+      {
+        "subject": "The Biggest GTO Wizard Update Ever is Here",
+        "preview": "3-way Solving, Nodelocking 2.0 & 50k+ ICM Sims.",
+        "type": "Patch notes",
+        "why_it_works": "Clear announcement, specific features in preview",
+        "open_rate_estimate": "Moderate (20-30% for active users)"
+      },
+      {
+        "subject": "Add MTT to your gameplan — now 30% off",
+        "preview": "Take your game beyond cash tables with MTT access.",
+        "type": "Cross-sell",
+        "why_it_works": "Direct benefit, discount upfront",
+        "open_rate_estimate": "Moderate (18-25% for cash players)"
+      }
+    ],
+    "optimization_needed": [
+      {
+        "subject": "Help us improve + win 1 month of Premium",
+        "preview": "Share your thoughts in a quick survey — 30 respondents win 1 free month of GTO Wizard Premium.",
+        "type": "Survey",
+        "why_it_works": "Clear ask, incentive mentioned, but low urgency",
+        "open_rate_estimate": "Low-Moderate (12-18%)",
+        "improvement_suggestions": "Add urgency (deadline), make prize more prominent, shorter preview"
+      }
+    ]
+  },
+  
+  "generation_instructions": {
+    "when_user_provides_context": {
+      "required_inputs": [
+        "Email type (patch notes, upsell, partnership, seasonal, etc.)",
+        "Target audience (free users, paid tier, churned, etc.)",
+        "Key message or offer",
+        "Any deadlines or urgency factors",
+        "Existing subject line (if optimizing)"
+      ],
+      "output_format": "Generate 5-7 subject line variations + matching preview text for each"
+    },
+    "variation_strategy": {
+      "mix_formulas": "Use different formulas for each variation",
+      "test_emoji": "Include 2-3 variations with emoji, 2-3 without",
+      "length_variety": "Provide short (30 chars), medium (40-45 chars), and optimal (50 chars)",
+      "tone_spectrum": "Range from direct to curiosity-driven",
+      "include_rationale": "Explain why each variation might perform well"
+    },
+    "output_structure": "For each variation, provide:\n1. Subject line (with char count)\n2. Preview text (with char count)\n3. Formula used\n4. Why it might work\n5. Best for (segment/scenario)"
+  },
+  
+  "mobile_optimization": {
+    "critical_info_first": "Put most important words in first 30 characters",
+    "front_load_benefit": "Lead with value, not setup",
+    "avoid_truncation": "Keep subject under 50 chars to avoid '...' on mobile",
+    "test_on_device": "Preview on actual mobile before sending",
+    "examples": {
+      "good": "Your 50% discount expires in 48 hours",
+      "bad": "We have an exclusive limited-time offer for you"
+    }
+  },
+  
+  "quality_checklist": [
+    "✅ Subject line under 50 characters",
+    "✅ Preview text 50-90 characters",
+    "✅ Preview text doesn't repeat subject",
+    "✅ Most important info in first 30 chars",
+    "✅ No spam trigger words",
+    "✅ Specific benefit or value mentioned",
+    "✅ Appropriate for target segment",
+    "✅ Emoji used strategically (if at all)",
+    "✅ Clear, not vague or generic",
+    "✅ Creates curiosity or urgency (when appropriate)",
+    "✅ Tested on mobile preview",
+    "✅ Grammar and spelling perfect",
+    "✅ Matches email content (no bait and switch)",
+    "✅ Brand voice consistent (Wizard terminology)",
+    "✅ A/B test variations prepared"
+  ]
+}
