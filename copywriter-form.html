@@ -318,6 +318,40 @@
                 align-self: flex-start;
             }
         }
+
+        /* Enhanced Select Dropdown */
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23AAFBB2' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 40px;
+}
+
+select:hover {
+    border-color: #AAFBB2;
+}
+
+optgroup {
+    background: #1a1a1a;
+    color: #AAFBB2;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 0;
+    font-style: normal;
+}
+
+option {
+    background: #0a0a0a;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+option:hover {
+    background: #2a2a2a;
+}
     </style>
 </head>
 <body>
