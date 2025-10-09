@@ -1,59 +1,133 @@
 {
   "content_type": "instagram_post",
-  "word_count": "80-150 words",
+  "character_limit": 2200,
+  "optimal_length": "125-300 characters (hook visible before 'more' click)",
   
-  "structure": {
-    "headline": "1 line, under 10 words - visual and attention-grabbing",
-    "body": "2-3 sentences with line breaks for readability",
-    "bullets": "Optional 2-4 bullets with emojis",
-    "cta": "Soft CTA - not pushy",
-    "spacing": "Use . on separate lines before hashtags",
-    "hashtags": "8-15 hashtags on separate lines after spacing dots"
+  "mandatory_structure": {
+    "line_1": "[Strong hook - question, bold claim, or exciting statement] 🎯",
+    "line_2": "[BLANK LINE]",
+    "line_3": "[Core message with 1-2 key benefits or features]",
+    "line_4": "[BLANK LINE]",
+    "line_5": "[Call to action] 🔗 Link in bio",
+    "line_6": "[BLANK LINE]",
+    "line_7": "[Hashtags - 6-12 relevant poker/GTO hashtags]"
   },
-  
+
   "formatting_rules": [
-    "Visual-first approach - imagine the accompanying image",
-    "Use line breaks generously for readability",
-    "Integrate emojis naturally into text",
-    "Keep CTA soft and inviting, not aggressive",
-    "Hashtags on separate lines after dots (. . .)"
+    "First 125 characters MUST hook the reader (appears before '...more')",
+    "Use line breaks for readability (blank line after hook)",
+    "Maximum 2200 characters total",
+    "Keep captions concise - aim for 150-300 characters for best engagement",
+    "Use emojis strategically (2-4 per post)",
+    "Bold important terms NOT supported (Instagram doesn't render markdown)",
+    "CTA should be clear: 'Link in bio', 'Save this', 'Tag a poker friend'",
+    "Use 6-12 targeted hashtags (30 max allowed)",
+    "Place hashtags at the end or in first comment",
+    "No clickable URLs in caption (use link in bio)"
   ],
-  
-  "tone": {
-    "style": "More casual and visual than Discord/Twitter",
-    "approach": "Inspirational and aspirational",
-    "emotion": "Excitement without being salesy"
+
+  "emojis": {
+    "performance": ["🚀", "⚡", "📈", "🔥"],
+    "learning": ["🧠", "📚", "🎯", "💡"],
+    "money_winning": ["💰", "💵", "🏆", "🥇"],
+    "analysis": ["📊", "🔍", "📉"],
+    "tools_tech": ["🛠️", "⚙️", "🎮"],
+    "excitement": ["🔥", "💪", "⚔️", "✨"],
+    "poker_specific": ["🃏", "♠️", "♥️", "♣️", "♦️"]
   },
-  
-  "hashtags": [
-    "#GTOWizard",
-    "#PokerStrategy",
-    "#GTOPoker",
-    "#PokerTraining",
-    "#LearnPoker",
-    "#PokerLife",
-    "#PokerCommunity",
-    "#CardPlayer",
-    "#PokerGrind",
-    "#PokerStudy"
-  ],
-  
+
+  "length_guidelines": {
+    "short_post": "125-150 characters (quick tip, announcement, question)",
+    "medium_post": "150-300 characters (feature highlight, strategy insight)",
+    "long_post": "300-500 characters (detailed explanation, story - use sparingly)"
+  },
+
+  "hashtag_strategy": {
+    "branded": ["#GTOWizard", "#GTOPoker"],
+    "poker_general": ["#PokerStrategy", "#PokerLife", "#PokerPlayer", "#OnlinePoker"],
+    "learning": ["#PokerTraining", "#LearnPoker", "#PokerTips", "#PokerEducation"],
+    "competitive": ["#PokerGrind", "#MTT", "#CashGame", "#PokerPro"],
+    "gto_specific": ["#GTO", "#GameTheory", "#OptimalPlay", "#PokerMath"]
+  },
+
   "real_examples": [
     {
-      "content": "Studying with GTO Wizard just got even better.\n\nSmarter reports. Cleaner analysis. Multiway practice.\n\n.\n.\n.\n#GTOWizard #PokerStrategy #GTOPoker #PokerTraining #LearnPoker #PokerLife",
-      "type": "feature_update"
+      "type": "feature_announcement",
+      "caption": "3-way postflop solving is LIVE 🚀\n\nInstantly solve multiway spots with GTO Wizard AI. Custom ranges, stack sizes, and nodelocking all supported.\n\nReady to level up? 🔗 Link in bio\n\n#GTOWizard #PokerStrategy #GTO #PokerTraining #OnlinePoker #MTT #PokerPro"
     },
     {
-      "content": "The biggest edges are in spots no one studies.\n\nEveryone misplays multiway pots; that's why we built a 3-way solver with advanced nodelocking.\n\n.\n.\n.\n#GTOWizard #PokerStrategy #GTOPoker #PokerTraining",
-      "type": "value_proposition"
+      "type": "quick_tip",
+      "caption": "Biggest preflop leak at 50bb? 🤔\n\nOver-defending the BB vs opens. Most players defend 8-12% too wide, costing them 0.2bb/hand.\n\nCheck your stats in the Analyzer 📊\n\n#GTOWizard #PokerTips #PokerStrategy #LearnPoker"
+    },
+    {
+      "type": "results_focused",
+      "caption": "From -2bb/100 to +8bb/100 in 3 months 📈\n\nHow? Daily practice mode + weekly hand reviews in the Analyzer.\n\nYour turn. Link in bio 💪\n\n#GTOWizard #PokerGrind #PokerTraining #PokerSuccess #MTT"
+    },
+    {
+      "type": "engagement_post",
+      "caption": "Spot quiz: Hero has AKo UTG, 100bb deep 🃏\n\nAction goes: UTG opens 2.5bb, BTN 3-bets to 8bb, BB cold calls.\n\nWhat's your move?\n\nA) Fold\nB) Call\nC) 4-bet\n\nComment below 👇\n\n#GTOWizard #PokerStrategy #PokerQuiz"
     }
   ],
-  
+
+  "content_types": {
+    "feature_update": {
+      "structure": "Hook about what's new → Key benefit → CTA + link in bio",
+      "emoji_count": "2-3",
+      "optimal_length": "150-250 chars"
+    },
+    "poker_tip": {
+      "structure": "Question or problem → Solution/insight → CTA to learn more",
+      "emoji_count": "2-3",
+      "optimal_length": "125-200 chars"
+    },
+    "user_success": {
+      "structure": "Result/achievement → How they did it → CTA",
+      "emoji_count": "2-4",
+      "optimal_length": "150-250 chars"
+    },
+    "engagement": {
+      "structure": "Question or scenario → Options → Ask for comments",
+      "emoji_count": "1-2",
+      "optimal_length": "150-300 chars"
+    }
+  },
+
+  "tone_guidelines": [
+    "Confident and authoritative but accessible",
+    "Data-driven (use specific numbers and stats)",
+    "Action-oriented (focus on results and improvement)",
+    "Professional poker terminology mixed with clear explanations",
+    "Exciting but not overhyped - let the features speak",
+    "Community-focused (tag friends, ask questions, encourage sharing)"
+  ],
+
   "what_to_avoid": [
-    "Don't exceed 150 words",
-    "Don't use more than 15 hashtags",
-    "Don't be too technical - keep it accessible",
-    "Don't forget line breaks - walls of text don't work on IG",
-    "Don't use aggressive CTAs"
+    "Don't exceed 2200 characters (Instagram hard limit)",
+    "Don't bury the hook - first 125 characters are critical",
+    "Don't use more than 30 hashtags (Instagram limit)",
+    "Don't make URLs clickable in caption (they don't work)",
+    "Don't use markdown formatting (bold/italic won't render)",
+    "Don't be vague - always include specific numbers or features",
+    "Don't forget the CTA - every post needs clear next action",
+    "Don't oversaturate with emojis (2-4 is optimal)",
+    "Don't use generic poker clichés without GTO Wizard voice"
+  ],
+
+  "visual_content_notes": [
+    "Instagram is visual-first - caption supports the image/video",
+    "Carousel posts work great for before/after, feature breakdowns",
+    "Reels should have on-screen text - don't rely only on caption",
+    "Stories can have longer captions but keep them scannable",
+    "Use branded colors and consistent visual style"
+  ],
+
+  "cta_examples": [
+    "Link in bio to get started 🔗",
+    "Try it free at link in bio 🚀",
+    "Save this for your next session 📌",
+    "Tag a poker friend who needs this 👥",
+    "Share your results in comments 👇",
+    "DM us your biggest leak 💬",
+    "Double tap if you agree 💙"
   ]
 }
