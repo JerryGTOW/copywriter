@@ -1,1 +1,464 @@
-
+{
+  "content_type": "newsletter",
+  "platform": "Email (CRM)",
+  "max_length": "600-800 words for main body",
+  
+  "email_structure": {
+    "subject_line": {
+      "char_limit": 50,
+      "best_practices": [
+        "Keep under 50 characters for mobile optimization",
+        "Lead with benefit or curiosity",
+        "Use personalization when relevant (Hey Wizard, Your...)",
+        "Include emojis strategically (🔥 for urgency, 🧠 for learning)",
+        "Test questions vs statements",
+        "Avoid spam triggers (FREE, !!!, ALL CAPS)"
+      ],
+      "formulas": [
+        "[Benefit] — [Context]",
+        "[Question that creates curiosity]",
+        "[Number] + [Benefit] + [Timeframe]",
+        "RE: [Continuation of story]",
+        "[Emoji] + [Personal address] + [Hook]"
+      ],
+      "examples": {
+        "patch_notes": "The Biggest GTO Wizard Update Ever is Here",
+        "urgency": "One mistake at 3 a.m. can cost the series",
+        "personal": "🔥 Hey Wizard, We Miss You! Check Out What's New",
+        "benefit": "Add MTT to your gameplan — now 30% off",
+        "question": "Ready for WCOOP's toughest grind?"
+      }
+    },
+    "preview_text": {
+      "char_limit": 90,
+      "purpose": "Expand on subject line, provide additional context",
+      "best_practices": [
+        "Don't repeat the subject line",
+        "Add complementary information",
+        "Create curiosity gap",
+        "Use 50-90 characters",
+        "Include benefit or outcome"
+      ],
+      "examples": {
+        "patch_notes": "3-way Solving, Nodelocking 2.0 & 50k+ ICM Sims.",
+        "urgency": "Table Wizard ensures focus and execution never drop.",
+        "offer": "Train smarter, study postflop in depth, and review your own hands — limited 10-day offer."
+      }
+    },
+    "header_banner": {
+      "purpose": "Visual anchor, sets tone for email",
+      "style": "Short, punchy headline (3-7 words)",
+      "examples": [
+        "Study. Practice. Analyze. Improve.",
+        "Focus on Wins. When Titles are on the Line.",
+        "The Tool Every Grinder Needs Before WCOOP",
+        "Get Back in the Game!"
+      ]
+    },
+    "opening": {
+      "greeting": "Hey Wizard, or Hi Wizard,",
+      "hook_types": {
+        "direct_benefit": "This update improves every step of your study workflow",
+        "problem_aware": "Every reg knows the theory. The difference at the very top is who executes",
+        "personal": "It's been a while! We'd love to have you back",
+        "urgency": "It's not too late to take advantage of",
+        "curiosity": "We just launched the most advanced feature in GTO Wizard history"
+      }
+    },
+    "body": {
+      "structure": "Hook → Context → Features/Benefits → Social Proof → CTA",
+      "paragraph_length": "2-4 sentences max per paragraph",
+      "formatting": [
+        "Use **bold** for key features and benefits",
+        "Use bullet points for feature lists",
+        "Use em dashes for dramatic pauses —",
+        "Short paragraphs with white space",
+        "One idea per paragraph"
+      ]
+    },
+    "cta_button": {
+      "best_practices": [
+        "Use action verbs",
+        "Create urgency or benefit",
+        "Keep under 5 words",
+        "Make it specific, not generic",
+        "Use first-person when appropriate (Get My..., Claim My...)"
+      ],
+      "examples": [
+        "Read the Full Patch Notes Here",
+        "Claim Your Offer",
+        "Lock In Your WCOOP Setup",
+        "Get WCOOP Ready",
+        "Take the Survey",
+        "Start Crushing Again",
+        "Get Unlimited Trainer"
+      ]
+    },
+    "closing": {
+      "sign_offs": [
+        "Happy grinding,",
+        "See you at the tables,",
+        "Good luck during WCOOP, Wizard.",
+        "Capture every Edge,",
+        "Your future final tables will thank you.",
+        "We hope to see you back soon!"
+      ],
+      "signature": "Adys from GTO Wizard\nor\nGTO Wizard Team"
+    },
+    "ps_section": {
+      "when_to_use": "For ongoing promos, reminders, or secondary CTAs",
+      "format": "P.S. [Reminder or secondary offer with link]",
+      "examples": [
+        "P.S. Reminder: the $40,000+ RakeBack Wizard promo is still running",
+        "P.S. Don't miss out — only 1 week left to claim your free tickets"
+      ]
+    }
+  },
+  
+  "brand_voice": {
+    "tone": [
+      "Direct and benefit-focused",
+      "Confident but not salesy",
+      "Personal and conversational ('you', 'your')",
+      "Technical when relevant, accessible always",
+      "Motivational and aspirational",
+      "Respects the grind and the player"
+    ],
+    "vocabulary": {
+      "openers": [
+        "This update improves",
+        "We just launched",
+        "It's not too late",
+        "Every reg knows",
+        "You've already"
+      ],
+      "power_words": [
+        "crush",
+        "dominate",
+        "precision",
+        "edge",
+        "execution",
+        "structure",
+        "master",
+        "unlock",
+        "instantly"
+      ],
+      "emotional_triggers": [
+        "the difference at the very top",
+        "when the grind gets brutal",
+        "one mistake can cost",
+        "nothing gets lost",
+        "the margins are razor-thin",
+        "the real separation"
+      ],
+      "community_terms": [
+        "Wizard",
+        "fellow Wizards",
+        "the grind",
+        "deep runs",
+        "the felt"
+      ]
+    }
+  },
+  
+  "email_types": {
+    "patch_notes": {
+      "purpose": "Announce new features and updates",
+      "structure": "Big picture hook → Feature-by-feature breakdown → CTA to full notes",
+      "tone": "Exciting, benefit-forward, comprehensive",
+      "length": "400-600 words",
+      "key_elements": [
+        "Lead with biggest/most exciting feature",
+        "Use section headers for each feature",
+        "Include specific benefits, not just features",
+        "Add 'Looking forward to...' personal closing",
+        "Link to full blog post for details"
+      ]
+    },
+    "product_upsell": {
+      "purpose": "Convert free to paid or lower tier to higher tier",
+      "structure": "Pattern interrupt → Current limitation → Solution → Benefits → Urgency → CTA",
+      "tone": "Direct, motivational, benefit-heavy",
+      "length": "300-400 words",
+      "key_elements": [
+        "Call out current behavior ('You've already used...')",
+        "Frame limitation as opportunity",
+        "Use progressive benefit stacking",
+        "Create FOMO with 'serious players...' framing",
+        "End with motivational push"
+      ]
+    },
+    "campaign_partnership": {
+      "purpose": "Promote partner offers and promos",
+      "structure": "Hook → Offer details → How to claim → Benefits → CTA",
+      "tone": "Urgent, value-focused, clear",
+      "length": "250-350 words",
+      "key_elements": [
+        "Lead with biggest prize/benefit",
+        "Use specific numbers ($40,000, $150, etc.)",
+        "Break down multiple offers with bullets",
+        "Include deadline/urgency",
+        "Add P.S. with reminder"
+      ]
+    },
+    "seasonal_campaign": {
+      "purpose": "Tie product to upcoming poker events (WCOOP, WSOP)",
+      "structure": "Event context → Pain point → Solution → Features → CTA",
+      "tone": "Serious, professional, high-stakes",
+      "length": "300-400 words",
+      "key_elements": [
+        "Reference specific event (WCOOP, WSOP)",
+        "Paint picture of high-pressure situation",
+        "Position product as structural advantage",
+        "Use poker terminology (12+ tabling, deep runs)",
+        "End with good luck wish"
+      ]
+    },
+    "engagement_survey": {
+      "purpose": "Collect user feedback",
+      "structure": "Personal request → What's in it for them → CTA",
+      "tone": "Friendly, appreciative, brief",
+      "length": "100-150 words",
+      "key_elements": [
+        "Keep extremely short",
+        "Mention incentive early (win free month)",
+        "Make it feel valuable, not transactional",
+        "Simple, direct CTA"
+      ]
+    },
+    "win_back_reactivation": {
+      "purpose": "Re-engage churned users",
+      "structure": "Personal greeting → What they're missing → New features → Incentive → CTA",
+      "tone": "Warm, welcoming, no-pressure",
+      "length": "300-400 words",
+      "key_elements": [
+        "Acknowledge time away ('It's been a while')",
+        "Show what's new since they left",
+        "Use emojis for warmth (🔥)",
+        "Offer discount when appropriate",
+        "Multiple CTAs for different features"
+      ]
+    },
+    "offer_promotion": {
+      "purpose": "Drive conversions with limited-time discount",
+      "structure": "Exclusive framing → Offer details → Benefits → Urgency → CTA",
+      "tone": "Urgent, value-driven, direct",
+      "length": "200-300 words",
+      "key_elements": [
+        "Frame as exclusive/special",
+        "Show specific pricing",
+        "Include deadline",
+        "List core benefits clearly",
+        "Single, strong CTA"
+      ]
+    }
+  },
+  
+  "crm_best_practices": {
+    "segmentation": {
+      "by_tier": ["Free users", "Starter", "Premium", "Elite"],
+      "by_game_type": ["Cash game players", "MTT players", "Both"],
+      "by_behavior": ["Active users", "At-risk", "Churned", "Trial users"],
+      "by_feature_usage": ["Trainer users", "Analyzer users", "High uploaders"]
+    },
+    "personalization": {
+      "address": "Hey Wizard, or Hi Wizard,",
+      "context": "Reference their specific usage (e.g., 'You've already used Trainer 5+ times')",
+      "offers": "Tailor to their current tier and usage patterns",
+      "timing": "Send based on behavior triggers (e.g., trial ending, feature cap hit)"
+    },
+    "frequency": {
+      "patch_notes": "Every 4-6 weeks (major updates)",
+      "product_upsells": "Max 1 per week per segment",
+      "campaigns": "2-3 per month max",
+      "win_back": "30-60-90 day cadence",
+      "transactional": "Immediate (triggered)"
+    },
+    "testing": {
+      "subject_lines": "Test emoji vs no emoji, question vs statement",
+      "cta_buttons": "Test copy, placement, color",
+      "send_times": "Test morning vs evening for your audience",
+      "content_length": "Test short vs detailed",
+      "personalization": "Test generic vs behavioral triggers"
+    },
+    "technical": {
+      "mobile_optimization": "60%+ users read on mobile - keep subject short, preview text clear, CTA obvious",
+      "image_text_ratio": "Keep text-to-image ratio high for deliverability",
+      "link_hygiene": "Use clean URLs, test all links before send",
+      "unsubscribe": "Always include clear unsubscribe option",
+      "spam_score": "Test emails through spam checker before send"
+    }
+  },
+  
+  "formatting_guidelines": {
+    "headers": "Use bold for section headers, not H1/H2 tags",
+    "emphasis": "Use **bold** for key terms, *italics* sparingly",
+    "lists": "Use bullet points (•) or dashes (-) for features",
+    "links": "Make link text descriptive, not 'click here'",
+    "spacing": "Double line break between sections",
+    "line_length": "Keep lines under 65 characters for readability",
+    "buttons": "Use HTML buttons, not text links, for primary CTAs"
+  },
+  
+  "real_examples": [
+    {
+      "type": "patch_notes",
+      "campaign": "Analyzer & GTO Reports Update",
+      "subject": "Smarter Reports. Cleaner Analysis. Multiway Practice.",
+      "preview": "Our latest update makes Study → Practice → Analyze sharper than ever.",
+      "word_count": 485,
+      "key_features": [
+        "Opens with workflow improvement hook",
+        "Feature-by-feature breakdown with benefits",
+        "Uses section headers for scannability",
+        "Ends with personal sign-off from team member"
+      ],
+      "content": "Hey Wizard,\n\nThis update improves every step of your study workflow: Study, Practice, Analyze.\n\nThe Analyzer has been rebuilt for faster reviews, GTO Reports now expose your biggest leaks, and you can drill 3-way postflop spots directly in Practice. We've also refined Nodelocking based on user feedback, making study more precise and intuitive. PokerArena S3 is also live with new rewards.\n\n**Analyzer – Redesigned Hands Table**\n\nReview more hands in less time with the new interactive Hands Table.\n\n- Smart filters and natural search\n- One-click jump from leak → solver or drill\n- Bulk notes, custom reports, and a cleaner layout\n\n**GTO Reports – Preflop Mistakes + Flop View**\n\nYour mistakes are now sorted by bb lost, so you know exactly which errors cost you the most.\n\n- Preflop Mistakes panel for top EV-losing hands\n- New General Flop View to benchmark frequencies vs. GTO\n\n**Practice – Multiway Drills**\n\nMultiway mastery is here.\n\n- Drill 3-way postflop spots directly in the trainer\n- Build intuition for the game's toughest situations\n\n**Nodelocking – Workflow Upgrades**\n\n- Lock frequencies for specific hand classes\n- Hover shortcuts + right-click combo expansion\n- Streamlined UX to match how players actually use nodelocking\n\n**PokerArena – Season 3**\n\nPokerArena adds one-click hand marking and sharper post-game insights.\n\nClimb the leaderboard for new prizes: Elite subs + exclusive avatars.\n\n*Season ends Oct 1st, 9 AM CEST*\n\nLooking forward to seeing you take your game to the next level, Wizard.\n\nHappy grinding,\n\nAdys from GTO Wizard"
+    },
+    {
+      "type": "seasonal_campaign_elite",
+      "campaign": "WCOOP Preparation - Elite Users",
+      "subject": "The structure behind every big WCOOP score",
+      "preview": "Table Wizard protects your EV when you're 12+ tabling under max pressure.",
+      "word_count": 312,
+      "key_features": [
+        "Opens with authority ('At the top level')",
+        "Paints high-pressure scenario",
+        "Positions product as execution advantage",
+        "Uses poker-specific language (12+ tables, 14-hour days)",
+        "Ends with good luck wish"
+      ],
+      "content": "Hi Wizard,\n\nAt the top level, everyone knows the ranges. Everyone studies the sims.\n\nThe real separation comes from execution.\n\nDeep in WCOOP, when the grind stretches across 12+ tables and 14-hour days.\n\nOne lapse in focus. One misclick. One missed hand. That's where titles slip away.\n\n**Table Wizard is built for this exact moment.**\n\n- Precision layouts so every table stays in sight\n- Hotkeys & custom sliders that make every action instant\n- Auto-upload and overlays to keep your grind seamless from crushing to analyzing\n\nYou already have the strategy to dominate.\n\nTable Wizard makes sure nothing gets lost between your study and the results.\n\nWhen the margins are razor-thin, structure is the edge that holds.\n\n**Button: Get WCOOP Ready**\n\nGood luck during WCOOP, Wizard.\n\nAdys from GTO Wizard"
+    },
+    {
+      "type": "product_upsell",
+      "campaign": "MTT Trainer Upsell - Free to Starter",
+      "subject": "Most Players Stop Here",
+      "preview": "… the serious ones unlock Starter and keep climbing.",
+      "word_count": 198,
+      "key_features": [
+        "Pattern interrupt subject line",
+        "Acknowledges current behavior",
+        "Frames limitation as cap on potential",
+        "Uses benefit stacking (More X = Better Y)",
+        "Motivational closing"
+      ],
+      "content": "Hi Wizard,\n\nYou've already used Trainer five+ times this month. We know you have that hunger to grow and crush your next tournament.\n\nBut right now, you're working with a limit.\n\nStarter unlocks unlimited Trainer drills, so you can go deeper on the spots that really matter.\n\nICM, late game push/fold, and those tough middle-stage decisions that make or break your run.\n\nWith Starter, you can leave doubt at the door and go and crush your next tournament.\n\nMore hands = **more confidence.**\n\nMore confidence = **better results.**\n\nYou've taken the first step. Now let's go further.\n\n**Button: Get Unlimited Trainer**\n\nHappy grinding,\n\nAdys from GTO Wizard"
+    },
+    {
+      "type": "partnership_campaign",
+      "campaign": "RakeBack Wizard Reminder",
+      "subject": "Your August reward: Free tickets worth $150",
+      "preview": "One week left to claim before the promotion closes on Aug 31.",
+      "word_count": 189,
+      "key_features": [
+        "Creates urgency (1 week left)",
+        "Lead with specific dollar value",
+        "Clear action steps",
+        "Multiple CTAs embedded in text",
+        "Stacks additional incentives"
+      ],
+      "content": "Hi Wizard,\n\nRakeBack Wizard's August launch promotion is ending soon, but it's not too late to get in on the action.\n\nCreate new accounts at WPN, CoinPoker, or Red Star Poker to earn a $25 or $50 tournament ticket.\n\nClaim this offer up to once at each of the three rooms!\n\nNo poker play required, just create your account through the links provided on the RakeBack Wizard site.\n\nYou'll earn rewards going forward for all rake paid on the account, and will even qualify for a $10,000 All-In Flipout if you pay $50 of rake before the end of the month.\n\n**Button: Get Tickets**\n\nHappy grinding,\n\nAdys from GTO Wizard"
+    },
+    {
+      "type": "win_back",
+      "campaign": "Churn Reactivation with Offer",
+      "subject": "🔥 Hey Wizard, Claim Your 15% OFF Now – Limited Time!",
+      "preview": "Exclusive offer - Claim your 15% OFF now",
+      "word_count": 285,
+      "key_features": [
+        "Warm, personal greeting",
+        "Shows what they missed",
+        "Clear incentive upfront",
+        "Multiple feature showcases with CTAs",
+        "Specific pricing breakdown",
+        "Hard deadline for urgency"
+      ],
+      "content": "Hey Wizard,\n\nIt's been a while! We'd love to show you the exciting new features we've added to GTO Wizard since you've been away.\n\nTo welcome you back, we're giving you **15% OFF your next annual membership purchase!**\n\n**What's New in GTO Wizard:**\n\n**Play Mode**\n\nHost poker games & challenge other Wizards in 1v1 matchmaking for free.\n\n**Button: Play now!**\n\n**Analyzer 2.0**\n\nFind your leaks & improve your game with 1-click.\n\n**Button: Try now!**\n\n**Many New Solutions**\n\nStraddle? Short stack? Ante? Or highly precise ICM sims? We've got them all!\n\n**Button: Try now!**\n\nAnd that's not all!\n\nTop level coaching, the unmatched accuracy and speed of GTO Wizard AI, and much more — improving your poker game has never been easier.\n\n**Ready to level up?**\n\nSince you've supported us in the past, we want to give back!\n\nThat's why we're offering you an exclusive deal:\n\n**15% discount on an annual membership — available until February 28th.**\n\n**Discounted prices:**\n\nStarter — $397 (was $468)\n\nPremium — $703 (was $828)\n\nElite — $1315 (was $1549)\n\n*This offer applies to all Starter, Premium, and Elite annual memberships.*\n\nDon't miss out!\n\n**Button: Start Crushing Again**\n\nWe hope to see you back soon!\n\nGTO Wizard Team"
+    },
+    {
+      "type": "major_launch",
+      "campaign": "Aggregated Flop Reports Launch",
+      "subject": "🧠 You Have Never Studied Poker Like This Before",
+      "preview": "The Most Powerful GTO Wizard Feature Just Dropped",
+      "word_count": 412,
+      "key_features": [
+        "Bold claim in subject line",
+        "Opens with superlative",
+        "Technical but accessible explanation",
+        "New pricing model introduction",
+        "Early adopter incentive (500 free credits)",
+        "Multiple use case callouts"
+      ],
+      "content": "Hey Wizards,\n\nWe just launched the most advanced feature in GTO Wizard history: **Custom Aggregated Flop Reports.**\n\nYour new shortcut to strategic mastery.\n\nNow you can generate a full aggregated strategy across all 1,755 flops, fully customized to your ranges, stack depths, bet sizings, ICM formats, rake structures, and more.\n\nNo server rentals. No delays. Just raw GTO insights, solved in minutes.\n\nBuilt on our new **Dynamic Sizing 2.0 engine**, the most accurate and consistent solving method yet.\n\n**Why it Matters to You**\n\nAggregated reports let you zoom out, simplify your game, and build strategic heuristics across different board textures.\n\nThis is how elite players prepare for final tables, PKOs, WSOP, and high-stakes cash games.\n\n- Dynamic sizing across every flop\n- Texture filtering + grouping\n- Total control over all parameters\n- Simplified outputs that expose deeper truths\n\n**Powered by Power Credits**\n\nEach report solves thousands of hands simultaneously. That takes serious computation.\n\nThat's why we've introduced **Power Credits**: scalable solving units that let you build exactly what you need.\n\nUsers who join Elite by July 15 will get a free starting bonus of **500 credits** to use instantly.\n\nTime is of the essence if you want access to the most efficient and practical poker training feature so far.\n\n**Starting at just $25**, with up to 20% bonus on larger plans.\n\nOnly pay for what you solve.\n\nCredits stay in your account for 1 year, and will be in your Elite account for another year if you decide to pause your subscription.\n\n**Button: Learn More Here**\n\nWhether you're chasing WSOP glory or mastering your local 5/10 cash game, this is your chance to **study like the best**, at solver speed.\n\nTry it now and explore what elite poker study looks like.\n\nAdys from GTO Wizard"
+    },
+    {
+      "type": "engagement",
+      "campaign": "User Feedback Survey",
+      "subject": "Help us improve + win 1 month of Premium",
+      "preview": "Share your thoughts in a quick survey — 30 respondents win 1 free month of GTO Wizard Premium.",
+      "word_count": 87,
+      "key_features": [
+        "Extremely short and direct",
+        "Incentive mentioned in subject and first line",
+        "Clear value exchange",
+        "Single CTA",
+        "Appreciative tone"
+      ],
+      "content": "Hey Wizard,\n\nWe'd love to hear about your experience using GTO Wizard.\n\nComplete a short survey and you'll be entered into a draw where 30 respondents will be randomly selected to win 1 free month of Premium.\n\n**Button: Take the Survey**\n\nThank you,\n\nAdys from GTO Wizard"
+    },
+    {
+      "type": "offer_promotion",
+      "campaign": "Starter Plan 50% Off",
+      "subject": "Your exclusive GTO Wizard offer",
+      "preview": "Train smarter, study postflop in depth, and review your own hands — limited 10-day offer.",
+      "word_count": 156,
+      "key_features": [
+        "Frames as exclusive/special",
+        "Benefit-driven feature list",
+        "Uses 'many more' to imply value beyond what's listed",
+        "Direct, simple CTA",
+        "Creates FOMO with 'special offer' framing"
+      ],
+      "content": "Hey Wizard,\n\nWe've prepared a special offer — 50% off Starter plan — that gives you unrestricted access to the core tools most players depend on every day.\n\n**With Starter, you'll get:**\n\n- Unlimited Trainer mode – run as many practice sessions as you want.\n- Unlimited postflop solutions – study far beyond the limits of the free version.\n\n… and many more game-changing features inside GTO Wizard.\n\n**Button: Upgrade your GTO Wizard experience**\n\nHappy grinding,\n\nAdys from GTO Wizard"
+    }
+  ],
+  
+  "what_to_avoid": [
+    "Don't use generic subject lines ('Newsletter #5', 'Monthly Update')",
+    "Don't bury the value - lead with benefit",
+    "Don't write walls of text - use short paragraphs",
+    "Don't use multiple competing CTAs - prioritize one primary action",
+    "Don't forget mobile users - keep subject short, CTA obvious",
+    "Don't oversell - let features speak for themselves",
+    "Don't ignore segmentation - tailor to user's current state",
+    "Don't send without testing links and images",
+    "Don't use spam trigger words (FREE!!!, ACT NOW, LIMITED TIME!!!)",
+    "Don't forget personalization - address as 'Wizard', reference behavior",
+    "Don't use too many exclamation points - one per email max",
+    "Don't make unsubscribe hard to find",
+    "Don't send without A/B testing subject lines",
+    "Don't ignore send time optimization",
+    "Don't use vague CTAs ('Learn More', 'Click Here') - be specific"
+  ],
+  
+  "quality_checklist": [
+    "✅ Subject line under 50 characters",
+    "✅ Preview text complements subject (doesn't repeat)",
+    "✅ Opens with 'Hey Wizard,' or 'Hi Wizard,'",
+    "✅ Hook in first 2 sentences",
+    "✅ Benefit-driven content (not just features)",
+    "✅ Short paragraphs (2-4 sentences max)",
+    "✅ Uses **bold** for key terms",
+    "✅ Clear hierarchy with section headers",
+    "✅ Single primary CTA that's specific",
+    "✅ Mobile-friendly (short lines, obvious CTA)",
+    "✅ Personal sign-off from Adys or Team",
+    "✅ All links tested and working",
+    "✅ No spam trigger words",
+    "✅ Clear unsubscribe option",
+    "✅ Segmentation appropriate for audience",
+    "✅ P.S. included when relevant (ongoing promos)",
+    "✅ Tone matches email type (urgent vs warm vs professional)"
+  ]
+}
