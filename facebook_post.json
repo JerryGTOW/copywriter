@@ -1,37 +1,189 @@
 {
   "content_type": "facebook_post",
-  "character_limit": 500,
+  "character_limit": 63206,
+  "optimal_length": "40-80 characters (66% higher engagement)",
+  
   "mandatory_structure": {
-    "hook": "Opening line that grabs attention",
-    "body": "2-3 paragraphs with line breaks",
-    "cta": "Clear call to action"
+    "line_1": "[Ultra-concise hook or complete message - 40-80 characters ideal]",
+    "line_2_optional": "[Additional context if needed - keep brief]",
+    "line_3_optional": "[Call to action with URL]"
   },
+
   "formatting_rules": [
-    "Start with attention-grabbing hook",
-    "Use line breaks for readability (not walls of text)",
-    "Keep paragraphs short (2-3 sentences max)",
-    "Include emojis sparingly (2-4 max)",
-    "End with clear CTA",
-    "Optimal length: 100-250 words"
+    "CRITICAL: Aim for 40-80 characters for maximum engagement (66% boost)",
+    "Posts under 80 characters consistently outperform longer content",
+    "Can extend to 250 characters for more context, but engagement drops",
+    "Use line breaks sparingly - Facebook truncates after ~130 characters",
+    "URLs are clickable and auto-preview - include full link",
+    "Emojis work well - use 1-3 strategically",
+    "Text on images counts separately (doesn't affect algorithm negatively anymore)",
+    "Video posts can have brief captions - let video do the talking",
+    "Ask questions to boost comments and engagement",
+    "Tag relevant pages when appropriate (@GTOWizard partners)"
   ],
-  "tone": {
-    "style": "Conversational and friendly",
-    "approach": "Community-focused, engaging",
-    "emotion": "Enthusiastic but authentic"
-  },
+
   "emojis": {
-    "recommended": ["🎯", "💪", "🔥", "👉", "⚡", "🚀", "💡", "✨"]
+    "performance": ["🚀", "⚡", "📈", "🔥"],
+    "learning": ["🧠", "📚", "🎯", "💡"],
+    "money_winning": ["💰", "🏆", "💵"],
+    "analysis": ["📊", "🔍"],
+    "tools": ["🛠️", "⚙️"],
+    "excitement": ["🔥", "💪", "✨"],
+    "community": ["👥", "💬", "🤝"]
   },
+
+  "length_guidelines": {
+    "ultra_short": "40-80 characters (OPTIMAL - highest engagement)",
+    "short": "80-120 characters (good engagement, more context)",
+    "medium": "120-250 characters (use when necessary, lower engagement)",
+    "avoid_long": "250+ characters (significantly lower engagement)"
+  },
+
   "real_examples": [
     {
-      "content": "Big news for our poker community! 🎯\n\nWe just released the most requested feature of 2024 - 3-way postflop solving with advanced nodelocking. This is a game-changer for anyone serious about mastering multiway spots.\n\nWhat does this mean for you?\n✅ Solve complex 3-way scenarios instantly\n✅ Model opponents with precision\n✅ Practice multiway spots in real-time\n\nReady to level up your game? Check out the full breakdown on our blog 👉 [link]\n\n#PokerStrategy #GTOWizard #PokerTraining"
+      "type": "ultra_short_optimal",
+      "character_count": 52,
+      "post": "3-way solving is live 🚀\n\nhttps://gtowizard.com/features/3way"
+    },
+    {
+      "type": "short_announcement",
+      "character_count": 98,
+      "post": "Biggest update ever: 3-way solving, Nodelocking 2.0, and 50K+ ICM sims 🔥\n\nhttps://blog.gtowizard.com/update"
+    },
+    {
+      "type": "engagement_question",
+      "character_count": 67,
+      "post": "What's your biggest preflop leak? 🤔\n\nComment below 👇"
+    },
+    {
+      "type": "value_prop_short",
+      "character_count": 89,
+      "post": "10M+ presolved solutions. Instant AI solving. Practice mode. Analyzer.\n\nTry free 🎯\n\ngtowizard.com"
+    },
+    {
+      "type": "result_focused",
+      "character_count": 76,
+      "post": "From -2bb to +8bb in 90 days 📈\n\nDaily practice works.\n\nhttps://gtowizard.com"
     }
   ],
+
+  "content_types": {
+    "feature_announcement": {
+      "structure": "Feature name + emoji → URL",
+      "optimal_length": "40-80 chars",
+      "emoji_count": "1-2",
+      "include_url": true
+    },
+    "blog_share": {
+      "structure": "Article hook → URL (Facebook auto-previews)",
+      "optimal_length": "50-100 chars",
+      "emoji_count": "0-1",
+      "include_url": true
+    },
+    "engagement_post": {
+      "structure": "Question + emoji → 'Comment below'",
+      "optimal_length": "40-80 chars",
+      "emoji_count": "1-2",
+      "include_url": false
+    },
+    "video_post": {
+      "structure": "Ultra-brief context (video does the work)",
+      "optimal_length": "20-60 chars",
+      "emoji_count": "0-1",
+      "include_url": false
+    },
+    "user_testimonial": {
+      "structure": "Result → How → URL",
+      "optimal_length": "60-100 chars",
+      "emoji_count": "1-2",
+      "include_url": true
+    }
+  },
+
+  "tone_guidelines": [
+    "Ultra-concise - every word must earn its place",
+    "Front-load the most important information",
+    "Let visuals (images/videos/link previews) do heavy lifting",
+    "Direct and action-oriented",
+    "Confident without being promotional",
+    "Data-driven when possible (specific numbers)",
+    "Question-based posts boost engagement"
+  ],
+
+  "url_strategy": [
+    "Always include full URL (Facebook auto-previews)",
+    "URL can be on separate line for clarity",
+    "Link preview shows image, title, description - use this!",
+    "Don't waste characters describing what's in the link preview",
+    "Use UTM parameters for tracking: ?utm_source=facebook&utm_medium=social",
+    "Branded short links work: gtow.pro redirects"
+  ],
+
+  "facebook_specific_features": {
+    "link_previews": "Facebook generates rich previews - optimize your blog/page meta tags",
+    "video_native": "Native videos get 10x more shares than YouTube links",
+    "live_video": "Facebook Live gets 6x more engagement",
+    "polls": "Use Facebook polls for engagement (separate from post text)",
+    "reactions": "Encourage specific reactions (not just likes)",
+    "tagging": "Tag partners, pros, pages to expand reach"
+  },
+
+  "post_timing": {
+    "best_times": "7-9 AM, 1-3 PM, 7-9 PM (weekdays)",
+    "best_days": "Tuesday through Thursday",
+    "avoid": "Late night and early morning (3-6 AM)"
+  },
+
   "what_to_avoid": [
-    "Don't create walls of text - use line breaks",
-    "Don't overuse emojis (max 4-5)",
-    "Don't be overly salesy",
-    "Don't exceed 500 words",
-    "Don't forget the CTA"
+    "Don't write long posts - Facebook algorithm penalizes them",
+    "Don't exceed 80 characters unless absolutely necessary",
+    "Don't be overly promotional - Facebook reduces reach of sales posts",
+    "Don't use shortened links that hide destination (Facebook may flag)",
+    "Don't post multiple times in a row (algorithm penalty)",
+    "Don't use too many hashtags (Facebook isn't hashtag-driven)",
+    "Don't forget the URL if driving traffic",
+    "Don't bury the key message - front-load it",
+    "Don't ignore comments - respond to boost engagement"
+  ],
+
+  "engagement_boosters": [
+    "Ask questions to prompt comments",
+    "Use numbers and data (3x, 50K+, etc.)",
+    "Include clear CTAs (Try free, Learn more, Comment below)",
+    "Tag relevant pages and people",
+    "Post when audience is active",
+    "Respond to comments within first hour",
+    "Use video when possible (higher engagement)",
+    "Test different post lengths and analyze performance"
+  ],
+
+  "cta_examples": [
+    "Try free 🎯",
+    "Learn more →",
+    "Comment below 👇",
+    "Share your results 💬",
+    "Get started now 🚀",
+    "Read more 📖",
+    "Watch now ▶️",
+    "Join free 🔥"
+  ],
+
+  "visual_content_notes": [
+    "Posts with images get 2.3x more engagement",
+    "Video posts outperform images",
+    "Facebook Reels are fastest-growing format",
+    "Carousel posts work for multiple features",
+    "Keep text-on-image to 20% or less (old rule still affects reach)",
+    "Use square or vertical video (mobile-optimized)"
+  ],
+
+  "algorithm_considerations": [
+    "Brevity is rewarded - 40-80 character sweet spot",
+    "Engagement (comments, shares, reactions) boosts reach",
+    "Video, especially native video, gets priority",
+    "Links to external sites get less reach than native content",
+    "Editing posts can trigger algorithm penalty",
+    "Too many posts in short time = reduced reach",
+    "Meaningful interactions (comments) weighted higher than reactions"
   ]
 }
