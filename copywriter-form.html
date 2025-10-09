@@ -3,148 +3,374 @@
 <head>
     <title>GTO Wizard Copywriter</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
             background: #0a0a0a;
             color: #fff;
+            line-height: 1.6;
         }
+
         h1 {
-            color: #00d4ff;
-            margin-bottom: 30px;
+            color: #AAFBB2;
+            margin-bottom: 40px;
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
         }
+
+        .form-container {
+            background: #1a1a1a;
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid #2a2a2a;
+            margin-bottom: 40px;
+        }
+
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
+
         label {
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
-            color: #00d4ff;
+            color: #AAFBB2;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
+
         input, textarea, select {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #333;
+            padding: 14px;
+            border: 2px solid #2a2a2a;
             border-radius: 8px;
-            background: #1a1a1a;
+            background: #0a0a0a;
             color: #fff;
-            font-size: 14px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: all 0.2s;
         }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #AAFBB2;
+            box-shadow: 0 0 0 3px rgba(170, 251, 178, 0.1);
+        }
+
         textarea {
             min-height: 120px;
             resize: vertical;
         }
-        button {
-            background: linear-gradient(135deg, #00d4ff, #0066ff);
-            color: white;
-            padding: 15px 40px;
+
+        button[type="submit"] {
+            background: linear-gradient(135deg, #AAFBB2, #7ae887);
+            color: #0a0a0a;
+            padding: 16px 48px;
             border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 600;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.3s;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+
+        button[type="submit"]:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(170, 251, 178, 0.4);
         }
-        button:disabled {
-            opacity: 0.6;
+
+        button[type="submit"]:disabled {
+            opacity: 0.5;
             cursor: not-allowed;
+            transform: none;
         }
+
         .loading {
             display: none;
             text-align: center;
-            margin: 20px 0;
-            color: #00d4ff;
+            margin: 40px 0;
+            padding: 40px;
+            background: #1a1a1a;
+            border-radius: 16px;
+            border: 2px dashed #AAFBB2;
         }
+
+        .loading p {
+            color: #AAFBB2;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 4px solid #2a2a2a;
+            border-top-color: #AAFBB2;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px 0;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
         .results {
             display: none;
-            margin-top: 40px;
-            padding: 30px;
+        }
+
+        .results-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .results-header h2 {
+            color: #AAFBB2;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .results-header p {
+            color: #888;
+            font-size: 16px;
+        }
+
+        .variation-card {
             background: #1a1a1a;
-            border-radius: 12px;
-            border: 1px solid #333;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 32px;
+            border-left: 6px solid #AAFBB2;
+            border: 2px solid #2a2a2a;
+            border-left: 6px solid #AAFBB2;
+            transition: all 0.3s;
         }
-        .variation {
-            margin: 20px 0;
-            padding: 20px;
-            background: #0a0a0a;
-            border-left: 4px solid #00d4ff;
-            border-radius: 8px;
+
+        .variation-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(170, 251, 178, 0.15);
         }
-        .score {
-            display: inline-block;
-            padding: 4px 12px;
-            background: #00d4ff;
-            color: #0a0a0a;
-            border-radius: 20px;
+
+        .variation-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2a2a2a;
+        }
+
+        .model-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .medal {
+            font-size: 32px;
+        }
+
+        .model-name {
+            font-size: 24px;
             font-weight: 700;
-            margin-left: 10px;
+            color: #fff;
         }
-        .copy-btn {
-            padding: 8px 16px;
+
+        .version-badge {
+            display: inline-block;
+            background: #2a2a2a;
+            color: #AAFBB2;
+            padding: 4px 12px;
+            border-radius: 6px;
             font-size: 14px;
-            margin-top: 10px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        .score-badge {
+            background: linear-gradient(135deg, #AAFBB2, #7ae887);
+            color: #0a0a0a;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .tone-description {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 20px;
+            padding: 12px 16px;
+            background: #0a0a0a;
+            border-radius: 8px;
+            font-style: italic;
+            border-left: 3px solid #AAFBB2;
+        }
+
+        .content-body {
+            background: #0a0a0a;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            color: #ddd;
+            line-height: 1.8;
+            white-space: pre-wrap;
+            font-family: 'SF Mono', 'Monaco', 'Cascadia Code', monospace;
+            font-size: 14px;
+            border: 1px solid #2a2a2a;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .content-body::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .content-body::-webkit-scrollbar-track {
+            background: #1a1a1a;
+            border-radius: 4px;
+        }
+
+        .content-body::-webkit-scrollbar-thumb {
+            background: #AAFBB2;
+            border-radius: 4px;
+        }
+
+        .copy-btn {
+            background: #AAFBB2;
+            color: #0a0a0a;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 15px;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .copy-btn:hover {
+            background: #7ae887;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(170, 251, 178, 0.3);
+        }
+
+        .copy-btn:active {
+            transform: translateY(0);
+        }
+
+        .copy-btn.copied {
+            background: #7ae887;
+        }
+
+        .error-message {
+            background: #ff4444;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .form-container {
+                padding: 24px;
+            }
+
+            .variation-card {
+                padding: 20px;
+            }
+
+            .variation-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .score-badge {
+                align-self: flex-start;
+            }
         }
     </style>
 </head>
 <body>
     <h1>🔥 GTO Wizard AI Copywriter</h1>
     
-    <form id="briefForm">
-        <div class="form-group">
-            <label for="contentType">Content Type *</label>
-            <select id="contentType" name="content_type" required>
-                <option value="">Select content type...</option>
-                <option value="discord_announcement">Discord Announcement</option>
-                <option value="twitter_post">Twitter/X Post</option>
-                <option value="instagram_post">Instagram Post</option>
-                <option value="blog_article">Blog Article</option>
-                <option value="newsletter">Newsletter</option>
-                <option value="ppc_ad">PPC Ad Copy</option>
-                <option value="video_script">Video Script/Title</option>
-            </select>
-        </div>
+    <div class="form-container">
+        <form id="briefForm">
+            <div class="form-group">
+                <label for="contentType">Content Type *</label>
+                <select id="contentType" name="content_type" required>
+                    <option value="">Select content type...</option>
+                    <option value="discord_announcement">Discord Announcement</option>
+                    <option value="twitter_post">Twitter/X Post</option>
+                    <option value="instagram_post">Instagram Post</option>
+                    <option value="ppc_ad">PPC Ad Copy</option>
+                </select>
+            </div>
 
-        <div class="form-group">
-            <label for="brief">Brief / Main Message *</label>
-            <textarea id="brief" name="brief" required placeholder="e.g., We're launching 3-way postflop solving with advanced nodelocking"></textarea>
-        </div>
+            <div class="form-group">
+                <label for="brief">Brief / Main Message *</label>
+                <textarea id="brief" name="brief" required placeholder="e.g., We're launching 3-way postflop solving with advanced nodelocking"></textarea>
+            </div>
 
-        <div class="form-group">
-            <label for="keyPoints">Key Points (one per line)</label>
-            <textarea id="keyPoints" name="key_points" placeholder="- Instant 3-way postflop solving&#10;- Works with custom ranges and mixed stacks&#10;- Includes nodelocking 2.0"></textarea>
-        </div>
+            <div class="form-group">
+                <label for="keyPoints">Key Points (one per line)</label>
+                <textarea id="keyPoints" name="key_points" placeholder="- Instant 3-way postflop solving&#10;- Works with custom ranges and mixed stacks&#10;- Includes nodelocking 2.0"></textarea>
+            </div>
 
-        <div class="form-group">
-            <label for="audience">Target Audience</label>
-            <input type="text" id="audience" name="target_audience" placeholder="e.g., Tournament players, All users, Cash game grinders">
-        </div>
+            <div class="form-group">
+                <label for="audience">Target Audience</label>
+                <input type="text" id="audience" name="target_audience" placeholder="e.g., Tournament players, All users, Cash game grinders">
+            </div>
 
-        <div class="form-group">
-            <label for="tone">Tone Preference (optional)</label>
-            <input type="text" id="tone" name="tone_preference" placeholder="e.g., More technical, More casual, More urgent">
-        </div>
+            <div class="form-group">
+                <label for="tone">Tone Preference (optional)</label>
+                <input type="text" id="tone" name="tone_preference" placeholder="e.g., More technical, More casual, More urgent">
+            </div>
 
-        <div class="form-group">
-            <label for="requirements">Special Requirements</label>
-            <textarea id="requirements" name="special_requirements" placeholder="e.g., Must include link to blog.gtowizard.com, Mention promo code WIZARDS25"></textarea>
-        </div>
+            <div class="form-group">
+                <label for="requirements">Special Requirements</label>
+                <textarea id="requirements" name="special_requirements" placeholder="e.g., Must include link to blog.gtowizard.com, Mention promo code"></textarea>
+            </div>
 
-        <div class="form-group">
-            <label for="context">Additional Context</label>
-            <textarea id="context" name="context" placeholder="Any background information that would help..."></textarea>
-        </div>
+            <div class="form-group">
+                <label for="context">Additional Context</label>
+                <textarea id="context" name="context" placeholder="Any background information that would help..."></textarea>
+            </div>
 
-        <button type="submit" id="submitBtn">Generate Copy 🚀</button>
-    </form>
+            <button type="submit" id="submitBtn">Generate Copy 🚀</button>
+        </form>
+    </div>
 
     <div class="loading" id="loading">
+        <div class="spinner"></div>
         <p>🧠 AI models are crafting your copy...</p>
         <p>This takes 10-15 seconds...</p>
     </div>
@@ -152,7 +378,7 @@
     <div class="results" id="results"></div>
 
     <script>
-        const WEBHOOK_URL = 'https://jerrygtow.app.n8n.cloud/webhook/copywriter'; // Update this!
+        const WEBHOOK_URL = 'https://jerrygtow.app.n8n.cloud/webhook/copywriter';
 
         document.getElementById('briefForm').addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -171,7 +397,7 @@
             const data = {};
             for (let [key, value] of formData.entries()) {
                 if (key === 'key_points') {
-                    data[key] = value.split('\n').filter(p => p.trim());
+                    data[key] = value.split('\n').filter(p => p.trim()).map(p => p.replace(/^-\s*/, ''));
                 } else {
                     data[key] = value;
                 }
@@ -187,13 +413,23 @@
                     body: JSON.stringify(data)
                 });
                 
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                
                 const result = await response.json();
+                
+                if (result.success === false) {
+                    throw new Error(result.error || 'Unknown error occurred');
+                }
                 
                 // Display results
                 displayResults(result);
                 
             } catch (error) {
-                alert('Error generating copy: ' + error.message);
+                console.error('Error:', error);
+                results.innerHTML = `<div class="error-message">❌ Error generating copy: ${error.message}</div>`;
+                results.style.display = 'block';
             } finally {
                 submitBtn.disabled = false;
                 loading.style.display = 'none';
@@ -203,35 +439,103 @@
         function displayResults(data) {
             const resultsDiv = document.getElementById('results');
             
-            let html = '<h2>🏆 Your AI-Generated Copy</h2>';
+            const medals = ['🥇', '🥈', '🥉'];
+            const variations = data.topThree || [];
             
-            // Top 3 variations
-            data.topThree.forEach((variation, index) => {
-                const medal = ['🥇', '🥈', '🥉'][index];
+            let html = `
+                <div class="results-header">
+                    <h2>🏆 Your AI-Generated Copy</h2>
+                    <p>${variations.length} variations from 3 AI models</p>
+                </div>
+            `;
+            
+            variations.forEach((variation, index) => {
+                const medal = medals[index] || '🎯';
+                const tone = variation.tone || 'Standard tone';
+                const content = variation.content || '';
+                
                 html += `
-                    <div class="variation">
-                        <h3>${medal} ${variation.model} - Version ${variation.version} 
-                            <span class="score">${variation.score}/100</span>
-                        </h3>
-                        <pre style="white-space: pre-wrap; font-family: inherit;">${variation.content}</pre>
-                        <button class="copy-btn" onclick="copyToClipboard('${index}')">📋 Copy to Clipboard</button>
-                        <textarea id="content-${index}" style="display:none;">${variation.content}</textarea>
+                    <div class="variation-card">
+                        <div class="variation-header">
+                            <div class="model-info">
+                                <span class="medal">${medal}</span>
+                                <div>
+                                    <span class="model-name">${variation.model}</span>
+                                    <span class="version-badge">Version ${variation.version}</span>
+                                </div>
+                            </div>
+                            <div class="score-badge">${variation.score}/100</div>
+                        </div>
+                        
+                        <div class="tone-description">
+                            📝 Tone: ${tone}
+                        </div>
+                        
+                        <div class="content-body">${escapeHtml(content)}</div>
+                        
+                        <button class="copy-btn" onclick="copyToClipboard(${index}, this)">
+                            📋 Copy to Clipboard
+                        </button>
+                        <textarea id="content-${index}" style="position:absolute;left:-9999px;">${escapeHtml(content)}</textarea>
                     </div>
                 `;
             });
             
             resultsDiv.innerHTML = html;
             resultsDiv.style.display = 'block';
-            resultsDiv.scrollIntoView({ behavior: 'smooth' });
+            
+            // Smooth scroll to results
+            setTimeout(() => {
+                resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
         }
 
-        function copyToClipboard(index) {
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function copyToClipboard(index, button) {
             const textarea = document.getElementById(`content-${index}`);
-            textarea.style.display = 'block';
+            
+            if (navigator.clipboard && window.isSecureContext) {
+                // Modern async clipboard API
+                navigator.clipboard.writeText(textarea.value).then(() => {
+                    showCopySuccess(button);
+                }).catch(err => {
+                    console.error('Copy failed:', err);
+                    fallbackCopy(textarea, button);
+                });
+            } else {
+                // Fallback for older browsers
+                fallbackCopy(textarea, button);
+            }
+        }
+
+        function fallbackCopy(textarea, button) {
+            textarea.style.position = 'fixed';
+            textarea.style.left = '0';
             textarea.select();
-            document.execCommand('copy');
-            textarea.style.display = 'none';
-            alert('✅ Copied to clipboard!');
+            try {
+                document.execCommand('copy');
+                showCopySuccess(button);
+            } catch (err) {
+                alert('Failed to copy. Please select and copy manually.');
+            }
+            textarea.style.position = 'absolute';
+            textarea.style.left = '-9999px';
+        }
+
+        function showCopySuccess(button) {
+            const originalHTML = button.innerHTML;
+            button.innerHTML = '✅ Copied!';
+            button.classList.add('copied');
+            
+            setTimeout(() => {
+                button.innerHTML = originalHTML;
+                button.classList.remove('copied');
+            }, 2000);
         }
     </script>
 </body>
